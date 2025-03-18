@@ -1,104 +1,103 @@
-
-body {
-    font-family: Arial, sans-serif;
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
 }
 
-header {
+/* Sticky Navigation Bar */
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background-color: #2c6e49;
-    color: #fff;
+    padding: 15px 10%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
 }
 
 .logo {
     font-size: 24px;
     font-weight: bold;
-    text-decoration: none;
+    color: white;
 }
 
-nav ul{
-    list-style-type: none;
+.nav-links {
+    list-style: none;
     display: flex;
-    padding: 0;
 }
 
-nav ul li{
-    margin: 15px 0;
+.nav-links li {
+    margin: 0 15px;
 }
 
-nav ul li .cta{
-    background-color: #ffb400;
-    padding: 10px 20px;
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f4a261;
+}
+
+.btn {
+    background: #f4a261;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
     border-radius: 5px;
+    transition: 0.3s;
 }
 
-nav ul li a{
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
+.btn:hover {
+    background: #e76f51;
 }
 
-.banner{
-    height: 400px;
+/* Hero Section with Scrolling Background */
+.hero {
+    height: 100vh;
+    background: url('frame_0.jpg') no-repeat center center/cover;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     text-align: center;
     color: white;
-    padding: 20px;
 }
 
-.banner-text{
-    background-color: rgba(0,0,0,0.5);
+.hero-text {
+    max-width: 600px;
+    background: rgba(0, 0, 0, 0.5);
     padding: 20px;
-    border-radius: 5px;
-}
-.banner h1{
-    font-size: 40px;
+    border-radius: 10px;
 }
 
-.banner .btn{
-    background-color: #ffb400;
-    color: black;
-    display: inline-block;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
 }
 
-.about{
-    padding: 20px;
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Content Sections */
+.content {
+    padding: 80px 10%;
     text-align: center;
-    background-color: #fff;
 }
 
-.about h2{
-    color: #2c6e49;
-    font-size: 40px;
-}
-
-.about .btn{
-    background-color: #2c6e49;
-    color: white;
-    display: inline-block;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
+/* Footer */
 footer {
-    background-color: #2c6e49;
-    color: #fff;
+    background: #222;
+    color: white;
     text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    padding: 15px;
 }
