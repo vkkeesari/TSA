@@ -1,12 +1,16 @@
-/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Arial', sans-serif;
+
 }
 
-/* Sticky Navigation Bar */
+.everything {
+    background: url('tamara-harhai-JHw7jyo8JCY-unsplash.jpg') no-repeat center center/cover;
+
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -60,10 +64,8 @@ nav {
     background: #e76f51;
 }
 
-/* Hero Section with Scrolling Background */
 .hero {
     height: 100vh;
-    background: url('bar-826688.jpg') no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,16 +90,102 @@ nav {
     margin-bottom: 20px;
 }
 
-/* Content Sections */
+.split-Container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 60px 100px;
+    gap: 40px;
+    margin-top: 100px;
+}
+
+
+.left-section, .right-section {
+    flex: 1;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    background:rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s;
+}
+
+
+.left-section:hover, .right-section:hover {
+    transform: translateY(-10px);
+}
+
+.left-section h2, .right-section h2, .right-section h3{
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.left-section p, .right-section p, .right-section ul {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.left-section ul li{
+    margin-bottom: 10px;
+}
+
+.right-section ul{
+    list-style: none;
+    padding: 20px;
+}
+
+
+.right-section ul li{
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+
 .content {
     padding: 80px 10%;
     text-align: center;
 }
 
-/* Footer */
 footer {
     background: #222;
     color: white;
     text-align: center;
     padding: 15px;
+}
+
+
+@media (max-width: 1024px) {
+    .nav-links {
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+        top: 60px;
+        left: 0;
+        background: rgba(0, 0, 0, 0.7);
+    }
+
+    .nav-links.active li {
+        margin: 10px 0;
+    }
+
+    .btn {
+        display: none;
+    }
+
+    .split-Container {
+        flex-direction: column;
+        padding: 40px 10%;
+    }
+
+    .left-section, .right-section {
+        padding: 20px;
+    }
 }
