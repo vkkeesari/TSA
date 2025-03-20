@@ -27,29 +27,28 @@ nav {
     backdrop-filter: blur(10px);
     z-index: 1000;
 }
-
 .logo {
     font-size: 24px;
     font-weight: bold;
     color: white;
 }
-
 .nav-links {
     list-style: none;
     display: flex;
 }
-
 .nav-links li {
     margin: 0 15px;
 }
-
 .nav-links a {
     text-decoration: none;
     color: white;
     font-size: 18px;
     transition: 0.3s;
 }
-
 .nav-links a:hover {
     color: #f4a261;
+}
+body {
+    margin: 0;
+    padding-top: 80px;
 }
