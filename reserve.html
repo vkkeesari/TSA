@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Reserve Table</title>
+    <link rel = "stylesheet" href = "reserve_table.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class = "logo">Ahara</div>
+            <ul class = "nav-links"> 
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="reserve.html" class = "btn">Reserve a Table</a>
+        </nav>
+    </header>
+
+    <section class = "Banner">
+        <div class = "banner-text">
+            <h1>Reserve a Table</h1>
+            <p>Fill out the form below to reserve a table at Ahara. We look forward to serving you!</p>
+        </div>
+    </section>
+
+    <main>
+        <section class = "form">
+            <h2>Book your table</h2>
+            <form onsubmit = "saveReservation(event)">
+                <label for = "name">Name:</label>
+                <input type = "text" id = "name" name = "name" required>
+
+                <label for = "email">Email:</label>
+                <input type = "email" id = "email" name = "email" required>
+
+                <label for = "phone">Phone:</label>
+                <input type = "tel" id = "phone" name = "phone" required>
+
+                <label for = "date">Date:</label>
+                <input type = "date" id = "date" name = "date" required>
+
+                <label for="time">Time:</label>
+                <select id="time" name="time" required></select>
+
+                <script>
+                    const select = document.getElementById('time');
+                    
+                    let start = new Date();
+                    start.setHours(11, 30, 0, 0);  // 11:30 AM
+                    const end = new Date();
+                    end.setHours(22, 0, 0, 0);  // 10:00 PM
+
+                    while (start <= end) {
+                        const option = document.createElement('option');
+                        option.value = start.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: true });
+                        option.textContent = start.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: true });
+                        select.appendChild(option);
+                        
+                        // Increment by 15 minutes
+                        start.setMinutes(start.getMinutes() + 15);
+                    }
+                </script>
+
+                <label for = "guests">Number of Guests:</label>
+                <select id = "guests" name = "guests" required>
+                    <option value = "1">1 Person</option>
+                    <option value = "2">2 People</option>
+                    <option value = "3">3 People</option>
+                    <option value = "4">4 People</option>
+                    <option value = "5+">5+ People</option>
+                </select>
+
+                <label for = "special-requests">Special Requests (Optional):</label>
+                <textarea id = "special-requests" name = "special-requests" placeholder = "Please let us know if you have any dietary restrictions or special requests"></textarea>
+
+                <button type = "submit" class = "btn">Reserve Table</button>
+            </form>
+
+            <p id = "Status"></p>
+        </section>
+
+        <section class = "contact-info">
+            <h2>Contact Information</h2>
+            <p>For any questions or concerns, please contact us at:</p>
+            <p><strong>Phone: </strong>(123) 456-789</p>
+            <p><strong>Email: </strong> contact@ahara.com</p>
+            <p><strong>Address: </strong> 123 Ahara street, restourant city, USA</p>
+            <iframe
+                src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093703!2d144.96315791590412!3d-37.8142179797517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xe20477fa5f4e4d3!2sAhara!5e0!3m2!1sen!2sus!4v1618994983315!5m2!1sen!2sus"
+                width = "100%" height = "300" style = "border:0;" allowfullscreen = "" loading = "lazy">
+            </iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 by Ahara. All rights reserved</p>
+    </footer>
+<script src = "reservation.js"></script>
+</body>
+
+</html>

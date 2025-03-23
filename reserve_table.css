@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'segoe ui', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background: url(pexels-thoda-creative-2082364-3904035.jpg) no-repeat center center/cover;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f4a261;
+}
+
+.btn {
+    background: #f4a261;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #e76f51;
+}
+
+.Banner{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    
+}
+
+.banner-text h1{
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.banner-text{
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
+}
+
+.banner-text p{
+    font-size: 20px;
+    max-width: 700px;
+    
+}
+
+.form{
+    padding: 60px;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    max-width: 800px;
+    margin: 50px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    color: white;
+}
+
+.form h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input, form select, form textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+btn-submit{
+    background: #ffc107;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: .3s;
+    width: 100%;
+    border: none;
+}
+
+.btn-submit:hover{
+    background: #ff9800;
+}
+
+.contact-info{
+    /*display: flex;*/
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 50px 0;
+}
+
+.contact-info p{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+iframe{
+    width: 80%;
+    margin: 20px auto;
+    display: block;
+    border-radius: 10px;
+}
+
+footer{
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
