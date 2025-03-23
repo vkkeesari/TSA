@@ -30,7 +30,7 @@
     <main>
         <section class = "form">
             <h2>Book your table</h2>
-            <form onsubmit = "saveReservation(event)">
+            <form id="reservation-form" onsubmit="saveReservation(event)">
                 <label for = "name">Name:</label>
                 <input type = "text" id = "name" name = "name" required>
 
@@ -80,8 +80,18 @@
                 <button type = "submit" class = "btn">Reserve Table</button>
             </form>
 
-            <p id = "Status"></p>
+            <p id = "status"></p>
+
+            <div id="reservations"></div>   
         </section>
+
+        <h3>Current Reservations</h3>
+        <pre id="reservation-display"></pre>
+
+        <button onclick="clearReservations()">Clear Reservations</button>
+
+
+
 
         <section class = "contact-info">
             <h2>Contact Information</h2>
@@ -94,12 +104,15 @@
                 width = "100%" height = "300" style = "border:0;" allowfullscreen = "" loading = "lazy">
             </iframe>
         </section>
+
+        
     </main>
 
     <footer>
         <p>&copy; 2025 by Ahara. All rights reserved</p>
     </footer>
-<script src = "reservations.js"></script>
+
+    <script src = "reservations.js"></script>
 </body>
 
 </html>
