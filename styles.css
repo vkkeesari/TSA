@@ -6,13 +6,10 @@
 }
 
 .everything {
-    margin: 0;
-    padding-top: 80px;
     background: url('pexels-chanwalrus-941869.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: #4a2c2a;
 }
 
 .container {
