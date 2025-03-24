@@ -8,7 +8,7 @@
 .everything {
     margin: 0;
     padding-top: 80px;
-    background-image: url('about-us.jpg');
+    background: url('about-us.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
