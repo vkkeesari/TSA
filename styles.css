@@ -113,31 +113,57 @@ nav {
 /* New Description Sections */
 .description {
     padding: 60px 0; /* Space between sections */
-    opacity: 0; /* Hidden until animated */
+    opacity: 0; /* Hidden by default */
 }
 
+/* Reset transform states when not animated */
+.desc-1 {
+    transform: translateX(-50px);
+}
+
+.desc-2 {
+    transform: translateX(50px);
+}
+
+.desc-3 {
+    transform: translateX(-50px);
+}
+
+.desc-4 {
+    transform: translateX(50px);
+}
+
+.desc-5 {
+    transform: translateX(-50px);
+}
+
+.desc-6 {
+    transform: translateX(50px);
+}
+
+/* Animate when class is added */
 .desc-1.animate {
-    animation: slideInLeft 0.8s ease-out forwards; /* Slide in from left */
+    animation: slideInLeft 0.8s ease-out forwards;
 }
 
 .desc-2.animate {
-    animation: slideInRight 0.8s ease-out forwards; /* Slide in from right */
+    animation: slideInRight 0.8s ease-out forwards;
 }
 
 .desc-3.animate {
-    animation: slideInLeft 0.8s ease-out forwards; /* Slide in from left */
+    animation: slideInLeft 0.8s ease-out forwards;
 }
 
 .desc-4.animate {
-    animation: slideInRight 0.8s ease-out forwards; /* Slide in from right */
+    animation: slideInRight 0.8s ease-out forwards;
 }
 
 .desc-5.animate {
-    animation: slideInLeft 0.8s ease-out forwards; /* Slide in from left */
+    animation: slideInLeft 0.8s ease-out forwards;
 }
 
 .desc-6.animate {
-    animation: slideInRight 0.8s ease-out forwards; /* Slide in from right */
+    animation: slideInRight 0.8s ease-out forwards;
 }
 
 /* Keyframes */
