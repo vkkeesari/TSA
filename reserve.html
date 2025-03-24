@@ -28,6 +28,23 @@
     </section>
 
     <main>
+        <script type = "module">
+            import { initializeApp } from "firebase/app";
+            const firebaseConfig = {
+                apiKey: "AIzaSyDu2f71DLUEX73Vi5ccIe47FxYw2K2l-Vg",
+                authDomain: "ahara-reservations.firebaseapp.com",
+                databaseURL: "https://ahara-reservations-default-rtdb.firebaseio.com",
+                projectId: "ahara-reservations",
+                storageBucket: "ahara-reservations.firebasestorage.app",
+                messagingSenderId: "860869953925",
+                appId: "1:860869953925:web:9cceb6a4a8dc050c091cec"
+            };
+
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+            const db = getDatabase(app);
+
+        </script>
         <section class = "form">
             <h2>Book your table</h2>
             <form id="reservation-form" onsubmit="saveReservation(event)">
