@@ -157,5 +157,4 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("date").addEventListener("change", updateTimeAvailability);
 });
 
-// Populate the dropdown and ensure all functionalities are working.
 populateTimeDropdown();
