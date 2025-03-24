@@ -110,10 +110,9 @@ nav {
     animation: pulse 0.5s infinite;
 }
 
-/* New Description Sections */
 .description {
-    padding: 60px 0; /* Space between sections */
-    opacity: 0; /* Hidden until animated */
+    padding: 60px 0; 
+    opacity: 0; 
 }
 
 .desc-1.animate {
