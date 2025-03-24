@@ -110,33 +110,34 @@ nav {
     animation: pulse 0.5s infinite;
 }
 
+/* New Description Sections */
 .description {
-    padding: 60px 0; 
-    opacity: 0; 
+    padding: 60px 0; /* Space between sections */
+    opacity: 0; /* Hidden until animated */
 }
 
 .desc-1.animate {
-    animation: slideInLeft 0.8s ease-out forwards;
+    animation: slideInLeft 0.8s ease-out forwards; /* Slide in from left */
 }
 
 .desc-2.animate {
-    animation: slideInRight 0.8s ease-out forwards;
+    animation: slideInRight 0.8s ease-out forwards; /* Slide in from right */
 }
 
 .desc-3.animate {
-    animation: slideInLeft 0.8s ease-out forwards;
+    animation: slideInLeft 0.8s ease-out forwards; /* Slide in from left */
 }
 
 .desc-4.animate {
-    animation: slideInRight 0.8s ease-out forwards;
+    animation: slideInRight 0.8s ease-out forwards; /* Slide in from right */
 }
 
 .desc-5.animate {
-    animation: slideInLeft 0.8s ease-out forwards;
+    animation: slideInLeft 0.8s ease-out forwards; /* Slide in from left */
 }
 
 .desc-6.animate {
-    animation: slideInRight 0.8s ease-out forwards;
+    animation: slideInRight 0.8s ease-out forwards; /* Slide in from right */
 }
 
 /* Keyframes */
