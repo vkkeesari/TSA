@@ -6,30 +6,34 @@
     <title>Contact Us - Ahara</title>
     <link rel="stylesheet" href="styles.css">
     <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
         .contact-section {
-            background-color: #f3f4ed; /* Subtle light gray for background */
-            padding: 40px 20px;
+            background: url('contact_image.jpg') no-repeat center center;
+            background-size: cover; /* Ensure the image covers the entire section */
+            margin: 0;
+            padding: 0;
+            min-height: 100vh; /* Make the section at least as tall as the viewport */
+            color: #fff; /* Default white text for contrast */
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         .container {
             max-width: 800px;
-            margin: 0 auto;
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent overlay for readability */
+            padding: 20px;
+            border-radius: 10px;
             text-align: center;
         }
-        h1, h2 {
-            color: #f77f00; /* Bright orange for headings */
+        h1, h2, label, p {
+            color: #f77f00; /* Bright orange for all headings, labels, and paragraph text */
             margin-bottom: 20px;
-        }
-        p {
-            line-height: 1.6;
-            color: #555;
         }
         .form-group {
             margin-bottom: 15px;
-        }
-        label {
-            display: block;
-            margin-bottom: 5px;
-            color: #333;
         }
         input, textarea {
             width: 100%;
@@ -59,7 +63,7 @@
                 <li><a href="menu.html">Menu</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="sustainability.html">Farm-to-Table</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html">Feedback</a></li>
             </ul>
             <a href="#reserve" class="btn">Reserve a Table</a>
         </nav>
@@ -68,7 +72,7 @@
         <div class="container">
             <h1>Get in Touch with Us</h1>
             <p>Have questions, feedback, or want to learn more about Ahara? We'd love to hear from you!</p>
-            <h2>Contact Form</h2>
+            <h2>Feedback Form</h2>
             <form action="submit_form.php" method="POST">
                 <div class="form-group">
                     <label for="name">Name</label>
@@ -84,8 +88,8 @@
                 </div>
                 <button type="submit">Send Message</button>
             </form>
-            <h2>Visit Us</h2>
-            <p>123 1205 Ladera Dr, NC 28173</p>
+            <h2>Contact Us</h2>
+            <p>1205 Ladera Dr, NC 28173</p>
             <p>Phone: (123) 456-7890</p>
             <p>Email: contact@ahara.com</p>
         </div>
