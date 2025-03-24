@@ -1,4 +1,5 @@
-import { getDatabase, ref, set, get, child, onValue, remove } from "firebase/app";
+import { getDatabase, ref, set, get, remove } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-database.js";
+
 
 document.addEventListener("DOMContentLoaded", () => {
     loadReservations();         // Load reservations from localStorage
