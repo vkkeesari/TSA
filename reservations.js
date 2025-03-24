@@ -81,7 +81,6 @@ function saveReservation(event) {
     document.getElementById("status").style.color = "green";
     document.getElementById("reservation-form").reset();
 
-    window.location.href = "thankyou.html";
 }
 
 function displayReservations() {
