@@ -111,7 +111,6 @@ function populateTimeDropdown() {
     }
 }
 
-// Update time availability
 function updateTimeAvailability() {
     const date = document.getElementById("date").value;
     const timeSelect = document.getElementById("time");
