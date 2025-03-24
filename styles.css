@@ -9,7 +9,7 @@ body {
     margin: 0;
     padding-top: 80px;
     background: url('pexels-chanwalrus-958547.jpg') no-repeat center center/cover;
-    color: #4a2c2a;
+    color: #fff;
 }
 
 .container {
@@ -19,18 +19,19 @@ body {
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation for container */
 }
 
 header {
     text-align: center;
-    padding: 20px; /* Keep padding if needed */
+    padding: 20px;
     color: #fff;
-    /* Removed background-color: #8b4513; */
 }
 
 h1, h2 {
-    color: #8b4513;
+    color: #f77f00;
     font-family: 'Georgia', serif;
+    animation: slideIn 0.8s ease-out; /* Slide-in animation for headings */
 }
 
 h1 {
@@ -49,7 +50,9 @@ h2 {
 p {
     line-height: 1.8;
     font-size: 16px;
-    color: #4a2c2a;
+    color: #f77f00;
+    animation: fadeIn 1.2s ease-in-out 0.3s; /* Fade-in with delay */
+    animation-fill-mode: both; /* Ensures text stays visible after animation */
 }
 
 nav {
@@ -85,11 +88,12 @@ nav {
     text-decoration: none;
     color: white;
     font-size: 18px;
-    transition: 0.3s;
+    transition: color 0.3s, transform 0.3s; /* Added transform for scale */
 }
 
 .nav-links a:hover {
     color: #f4a261;
+    transform: scale(1.1); /* Slight scale-up on hover */
 }
 
 .btn {
@@ -98,11 +102,45 @@ nav {
     padding: 10px 15px;
     text-decoration: none;
     border-radius: 5px;
-    transition: 0.3s;
+    transition: background 0.3s, transform 0.3s; /* Added transform for pulse */
 }
 
 .btn:hover {
     background: #e76f51;
+    animation: pulse 0.5s infinite; /* Pulse effect on hover */
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 @media (max-width: 1024px) {
