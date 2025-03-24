@@ -125,6 +125,13 @@ form input, form select, form textarea{
     border-radius: 5px;
 }
 
+.grayed-out {
+    background-color: #d3d3d3; 
+    color: #808080;    
+    cursor: not-allowed; 
+}
+
+
 btn-submit{
     background: #ffc107;
     color: white;

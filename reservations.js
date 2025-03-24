@@ -80,7 +80,7 @@ function saveReservation(event) {
 
     window.location.href = "thankyou.html";
 
-    
+
     saveToFirebase();
     displayReservations();
     updateTimeAvailability();
@@ -127,13 +127,14 @@ function updateTimeAvailability() {
 
         if (reservations[date] && reservations[date][time] && reservations[date][time].length >= 3) {
             option.disabled = true;
-            option.textContent = `${option.textContent.replace(" (Fully Booked)", "")} (Fully Booked)`;
+            option.classList.add("grayed-out");  // Add class for styling
         } else {
             option.disabled = false;
-            option.textContent = option.textContent.replace(" (Fully Booked)", "");
+            option.classList.remove("grayed-out");
         }
     }
 }
+
 
 // Clear reservations
 function clearReservations() {
