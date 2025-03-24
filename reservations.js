@@ -132,7 +132,6 @@ function updateTimeAvailability() {
 }
 
 // Clear reservations
-// Clear reservations
 function clearReservations() {
     if (confirm("Are you sure you want to clear all reservations?")) {
         const reservationsRef = ref(db, "reservations/");
