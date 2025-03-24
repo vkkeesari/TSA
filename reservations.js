@@ -84,7 +84,6 @@ function saveReservation(event) {
     window.location.href = "thankyou.html";
 }
 
-// Display reservations
 function displayReservations() {
     const display = document.getElementById("reservation-display");
 
@@ -95,7 +94,6 @@ function displayReservations() {
     }
 }
 
-// Populate the time dropdown
 function populateTimeDropdown() {
     const timeSelect = document.getElementById("time");
     const start = new Date();
