@@ -19,7 +19,7 @@ body {
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    animation: fadeIn 1s ease-in-out; /* Fade-in animation for container */
+    animation: fadeIn 1s ease-in-out;
 }
 
 header {
@@ -31,7 +31,7 @@ header {
 h1, h2 {
     color: #f77f00;
     font-family: 'Georgia', serif;
-    animation: slideIn 0.8s ease-out; /* Slide-in animation for headings */
+    animation: slideIn 0.8s ease-out;
 }
 
 h1 {
@@ -51,8 +51,8 @@ p {
     line-height: 1.8;
     font-size: 16px;
     color: #f77f00;
-    animation: fadeIn 1.2s ease-in-out 0.3s; /* Fade-in with delay */
-    animation-fill-mode: both; /* Ensures text stays visible after animation */
+    animation: fadeIn 1.2s ease-in-out 0.3s;
+    animation-fill-mode: both;
 }
 
 nav {
@@ -88,12 +88,12 @@ nav {
     text-decoration: none;
     color: white;
     font-size: 18px;
-    transition: color 0.3s, transform 0.3s; /* Added transform for scale */
+    transition: color 0.3s, transform 0.3s;
 }
 
 .nav-links a:hover {
     color: #f4a261;
-    transform: scale(1.1); /* Slight scale-up on hover */
+    transform: scale(1.1);
 }
 
 .btn {
@@ -102,15 +102,45 @@ nav {
     padding: 10px 15px;
     text-decoration: none;
     border-radius: 5px;
-    transition: background 0.3s, transform 0.3s; /* Added transform for pulse */
+    transition: background 0.3s, transform 0.3s;
 }
 
 .btn:hover {
     background: #e76f51;
-    animation: pulse 0.5s infinite; /* Pulse effect on hover */
+    animation: pulse 0.5s infinite;
 }
 
-/* Animation Keyframes */
+/* New Description Sections */
+.description {
+    padding: 60px 0; /* Space between sections */
+    opacity: 0; /* Hidden until animated */
+}
+
+.desc-1.animate {
+    animation: slideInLeft 0.8s ease-out forwards; /* Slide in from left */
+}
+
+.desc-2.animate {
+    animation: slideInRight 0.8s ease-out forwards; /* Slide in from right */
+}
+
+.desc-3.animate {
+    animation: slideInLeft 0.8s ease-out forwards; /* Slide in from left */
+}
+
+.desc-4.animate {
+    animation: slideInRight 0.8s ease-out forwards; /* Slide in from right */
+}
+
+.desc-5.animate {
+    animation: slideInLeft 0.8s ease-out forwards; /* Slide in from left */
+}
+
+.desc-6.animate {
+    animation: slideInRight 0.8s ease-out forwards; /* Slide in from right */
+}
+
+/* Keyframes */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -140,6 +170,28 @@ nav {
     }
     100% {
         transform: scale(1);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
     }
 }
 
