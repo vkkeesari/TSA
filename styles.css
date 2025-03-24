@@ -116,27 +116,27 @@ nav {
 }
 
 .desc-1.animate {
-    animation: slideInLeft 0.8s ease-out forwards; /* Slide in from left */
+    animation: slideInLeft 0.8s ease-out forwards;
 }
 
 .desc-2.animate {
-    animation: slideInRight 0.8s ease-out forwards; /* Slide in from right */
+    animation: slideInRight 0.8s ease-out forwards;
 }
 
 .desc-3.animate {
-    animation: slideInLeft 0.8s ease-out forwards; /* Slide in from left */
+    animation: slideInLeft 0.8s ease-out forwards;
 }
 
 .desc-4.animate {
-    animation: slideInRight 0.8s ease-out forwards; /* Slide in from right */
+    animation: slideInRight 0.8s ease-out forwards;
 }
 
 .desc-5.animate {
-    animation: slideInLeft 0.8s ease-out forwards; /* Slide in from left */
+    animation: slideInLeft 0.8s ease-out forwards;
 }
 
 .desc-6.animate {
-    animation: slideInRight 0.8s ease-out forwards; /* Slide in from right */
+    animation: slideInRight 0.8s ease-out forwards;
 }
 
 /* Keyframes */
