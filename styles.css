@@ -9,7 +9,7 @@ body {
     margin: 0;
     padding-top: 80px;
     background: url('pexels-chanwalrus-958547.jpg') no-repeat center center/cover;
-    color: #4a2c2a;
+    color: #fff; /* Changed to white */
 }
 
 .container {
@@ -23,13 +23,12 @@ body {
 
 header {
     text-align: center;
-    padding: 20px; /* Keep padding if needed */
-    color: #fff;
-    /* Removed background-color: #8b4513; */
+    padding: 20px;
+    color: #fff; /* Already white, kept for clarity */
 }
 
 h1, h2 {
-    color: #8b4513;
+    color: #fff; /* Changed to white */
     font-family: 'Georgia', serif;
 }
 
@@ -49,7 +48,7 @@ h2 {
 p {
     line-height: 1.8;
     font-size: 16px;
-    color: #4a2c2a;
+    color: #fff; /* Changed to white */
 }
 
 nav {
@@ -69,7 +68,7 @@ nav {
 .logo {
     font-size: 24px;
     font-weight: bold;
-    color: white;
+    color: white; /* Already white */
 }
 
 .nav-links {
@@ -83,7 +82,7 @@ nav {
 
 .nav-links a {
     text-decoration: none;
-    color: white;
+    color: white; /* Already white */
     font-size: 18px;
     transition: 0.3s;
 }
@@ -94,7 +93,7 @@ nav {
 
 .btn {
     background: #f4a261;
-    color: white;
+    color: white; /* Already white */
     padding: 10px 15px;
     text-decoration: none;
     border-radius: 5px;
