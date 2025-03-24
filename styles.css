@@ -7,7 +7,7 @@
 
 body {
     margin: 0;
-    padding-top: 80px; /* Keeps space for fixed nav */
+    padding-top: 80px;
     background: url('pexels-chanwalrus-941869.jpg') no-repeat center center/cover;
     color: #4a2c2a;
 }
@@ -23,9 +23,9 @@ body {
 
 header {
     text-align: center;
-    background-color: #8b4513;
-    padding: 20px;
+    padding: 20px; /* Keep padding if needed */
     color: #fff;
+    /* Removed background-color: #8b4513; */
 }
 
 h1, h2 {
