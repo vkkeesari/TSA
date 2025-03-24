@@ -1,139 +1,161 @@
-/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Georgia", serif;
+
 }
 
-/* Body Styles */
-body {
-    font-family: 'Playfair Display', serif; /* Elegant, fancy font */
-    background-color: #2c3e50; /* Dark charcoal blue background */
-    color: #ecf0f1; /* Light gray text color */
-    line-height: 1.6;
-    font-size: 16px;
+body{
+    background: url(pexels-gaurav-kumar-1281378-18488312.jpg) no-repeat center center/cover;
 }
 
-/* Header */
-header {
-    background-color: #34495e; /* Darker blue-gray for header */
-    color: #f39c12; /* Gold accent text */
-    text-align: center;
-    padding: 30px 0;
-    border-bottom: 5px solid #f39c12; /* Gold border */
-}
-
-header h1 {
-    font-size: 3rem;
-    font-weight: bold;
-}
-
-header p {
-    font-size: 1.2rem;
-    margin-top: 10px;
-}
-
-/* Menu Sections */
-.menu-section {
-    padding: 40px;
-    margin: 20px 0;
-    background-color: #34495e; /* Dark grayish-blue */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    color: #ecf0f1; /* Light text for readability */
-}
-
-.menu-section h2 {
-    font-size: 2.5rem;
-    color: #f39c12; /* Gold color for headings */
-    text-align: center;
-    margin-bottom: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-/* Menu Items */
-.menu-item {
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 25px;
-    background-color: #2c3e50; /* Darker background for items */
-    border: 2px solid #7f8c8d; /* Darker border for menu items */
-    margin-bottom: 15px;
-    border-radius: 10px;
-    transition: background-color 0.3s ease;
+    padding: 15px 10%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
 }
 
-.menu-item:hover {
-    background-color: #7f8c8d; /* Lighter hover background */
-}
-
-.menu-item h3 {
-    font-size: 1.8rem;
-    color: #ecf0f1;
+.logo {
+    font-size: 24px;
     font-weight: bold;
+    color: white;
 }
 
-.menu-item p {
-    font-size: 1.1rem;
-    color: #bdc3c7; /* Lighter gray color for descriptions */
-    margin-top: 10px;
+.nav-links {
+    list-style: none;
+    display: flex;
 }
 
-.price {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: #f39c12; /* Gold accent for pricing */
+.nav-links li {
+    margin: 0 15px;
 }
 
-/* Footer */
-footer {
-    background-color: #34495e; /* Dark footer */
-    color: #f39c12; /* Gold footer text */
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f4a261;
+}
+
+.btn {
+    background: #f4a261;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #e76f51;
+}
+
+.Banner{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 20px 0;
-    font-size: 1rem;
+    color: white;
+    
 }
 
-/* Special Styles */
-.menu-item .price {
-    font-size: 1.8rem;
-    color: #f39c12; /* Gold for price */
+.banner-text h1{
+    font-size: 60px;
+    margin-bottom: 20px;
 }
 
-.menu-item h3 {
-    font-size: 1.8rem;
-    color: #ecf0f1; /* White text for menu items */
+.banner-text{
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
 }
 
-/* Custom Font and Styling for Headers */
-h1, h2, h3 {
-    font-family: 'Playfair Display', serif;
+.banner-text p{
+    font-size: 20px;
+    max-width: 700px;
+    
 }
 
-/* Add Patterns for Background (optional) */
-body {
-    background-image: url('https://www.transparenttextures.com/patterns/stonewall.png');
-    background-repeat: repeat;
-    background-position: center;
+.form{
+    padding: 60px;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    max-width: 800px;
+    margin: 50px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    color: white;
 }
 
-/* Menu Item Price */
-.price {
-    font-size: 1.8rem;
-    color: #f39c12; /* Gold color for prices */
+.form h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form label{
+    display: block;
+    margin-bottom: 5px;
     font-weight: bold;
 }
 
-/* Responsive Design */
-@media only screen and (max-width: 768px) {
-    .menu-item {
-        flex-direction: column;
-        text-align: center;
-    }
+form input, form select, form textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
 
-    .price {
-        margin-top: 10px;
-    }
+btn-submit{
+    background: #ffc107;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: .3s;
+    width: 100%;
+    border: none;
+}
+
+.btn-submit:hover{
+    background: #ff9800;
+}
+
+.contact-info{
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 50px 0;
+}
+
+.contact-info p{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+iframe{
+    width: 80%;
+    margin: 20px auto;
+    display: block;
+    border-radius: 10px;
+}
+
+footer{
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
 }
