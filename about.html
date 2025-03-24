@@ -34,47 +34,51 @@
             <p>final thank you for reading this and external info</p>
         </div>
     </section>
+    <!-- New Description Sections -->
     <section class="desc-1 description">
         <div class="container">
-            <h2>Vidhu</h2>
-            <p>vidhu comes in here </p>
+            <h2>Our Beginnings</h2>
+            <p>A small family dream sparked by a love for authentic Indian flavors.</p>
         </div>
     </section>
     <section class="desc-2 description">
         <div class="container">
-            <h2>tanish</h2>
-            <p>tanish comes in here</p>
+            <h2>Our Sourcing</h2>
+            <p>We partner with local farmers to bring fresh, seasonal ingredients to your plate.</p>
         </div>
     </section>
     <section class="desc-3 description">
         <div class="container">
-            <h2>ani</h2>
-            <p>ani comes in here</p>
+            <h2>Our Techniques</h2>
+            <p>Traditional methods meet modern innovation in our kitchen.</p>
         </div>
     </section>
     <section class="desc-4 description">
         <div class="container">
-            <h2>sunny</h2>
-            <p>sunny comes in here</p>
+            <h2>Our Spices</h2>
+            <p>Imported directly from India, our spices are the soul of every dish.</p>
         </div>
     </section>
     <section class="desc-5 description">
         <div class="container">
-            <h2>abhinav</h2>
-            <p>abhinav comes in here</p>
+            <h2>Our Community</h2>
+            <p>We support local artisans and growers to build a stronger community.</p>
         </div>
     </section>
     <section class="desc-6 description">
         <div class="container">
-            <h2>richa</h2>
-            <p>richa comes in here</p>
+            <h2>Our Vision</h2>
+            <p>A sustainable future where food celebrates culture and nature.</p>
         </div>
     </section>
     <script>
+        // Intersection Observer to toggle animations on scroll
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('animate');
+                } else {
+                    entry.target.classList.remove('animate');
                 }
             });
         }, { threshold: 0.5 }); // Trigger when 50% of element is visible
