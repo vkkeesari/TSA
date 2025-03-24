@@ -73,15 +73,16 @@ function saveReservation(event) {
     }
 
     reservations[date][time].push({ name, guests });
-    saveToFirebase();
-    displayReservations();
-    updateTimeAvailability();
-
     document.getElementById("status").innerText = `Reservation confirmed for ${name} at ${time} on ${date}.`;
     document.getElementById("status").style.color = "green";
     document.getElementById("reservation-form").reset();
 
     window.location.href = "thankyou.html";
+    saveToFirebase();
+    displayReservations();
+    updateTimeAvailability();
+
+    
 }
 
 function displayReservations() {
