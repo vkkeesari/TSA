@@ -5,8 +5,11 @@
     font-family: 'Georgia', serif;
 }
 
-.background {
+body {
+    margin: 0;
+    padding-top: 80px; /* Keeps space for fixed nav */
     background: url('pexels-chanwalrus-941869.jpg') no-repeat center center/cover;
+    color: #4a2c2a;
 }
 
 .container {
