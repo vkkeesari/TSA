@@ -80,6 +80,8 @@ function saveReservation(event) {
     document.getElementById("status").innerText = `Reservation confirmed for ${name} at ${time} on ${date}.`;
     document.getElementById("status").style.color = "green";
     document.getElementById("reservation-form").reset();
+
+    window.location.href = "thankyou.html";
 }
 
 // Display reservations
