@@ -72,7 +72,6 @@
         </div>
     </section>
     <script>
-        // Intersection Observer to toggle animations on scroll
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -81,7 +80,7 @@
                     entry.target.classList.remove('animate');
                 }
             });
-        }, { threshold: 0.5 }); // Trigger when 50% of element is visible
+        }, { threshold: 0.5 });
 
         document.querySelectorAll('.description').forEach(desc => {
             observer.observe(desc);
