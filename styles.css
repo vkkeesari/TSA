@@ -8,7 +8,10 @@
 body {
     margin: 0;
     padding-top: 80px;
-    background-color: #fdf6f0;
+    background-image: url('about-us.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: #4a2c2a;
 }
 
@@ -16,7 +19,7 @@ body {
     max-width: 900px;
     margin: 0 auto;
     padding: 30px;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
@@ -103,6 +106,15 @@ nav {
 
 .btn:hover {
     background: #e76f51;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 1024px) {
