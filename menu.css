@@ -1,0 +1,139 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f8ff; /* Light background color */
+    color: #2f2f2f;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Header */
+header {
+    background-color: #ff6347; /* Bright red-orange color */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 5px solid #f1c40f; /* Yellow border */
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Menu Sections */
+.menu-section {
+    padding: 30px;
+    margin: 20px 0;
+    background-color: #fff8dc; /* Light yellow background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-section h2 {
+    font-size: 2.5rem;
+    color: #ff6347; /* Bold red-orange */
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Menu Items */
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #fdfdfd;
+    border: 2px solid #ddd;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.menu-item:hover {
+    background-color: #ffe4b5; /* Light golden color on hover */
+}
+
+.menu-item h3 {
+    font-size: 1.6rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.menu-item p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff6347; /* Red-orange */
+}
+
+/* Footer */
+footer {
+    background-color: #ff6347;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1rem;
+}
+
+/* Special Styles */
+.menu-item .price {
+    font-size: 1.8rem;
+    color: #d35400; /* Dark orange */
+}
+
+.menu-item h3 {
+    font-size: 1.6rem;
+    color: #2c3e50;
+}
+
+/* Add Patterns for Background (optional) */
+body {
+    background-image: url('https://www.transparenttextures.com/patterns/stonewall.png');
+    background-repeat: repeat;
+    background-position: center;
+}
+
+/* Menu Item Price */
+.price {
+    font-size: 1.4rem;
+    color: #e67e22;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Custom Font and Styling for Headers */
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    .menu-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .price {
+        margin-top: 10px;
+    }
+}
