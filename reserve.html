@@ -3,108 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reserve Table</title>
-    <link rel="stylesheet" href="reserve_table.css">
+    <title>Thank You</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: url('pexels-gaurav-kumar-1281378-18488312.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .thank-you-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.5); 
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        p {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+
+        .home-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1em;
+            color: white;
+            background-color: #eea159; 
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .home-button:hover {
+            background-color: #d6924b; 
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">Ahara</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href = "sustainability.html">Farm-to-Table</a></li>
-                <li><a href="contact.html">Feedback</a></li>
-            </ul>
-            <a href="reserve.html" class="btn">Reserve a Table</a>
-        </nav>
-    </header>
-
-    <section class="Banner">
-        <div class="banner-text">
-            <h1>Reserve a Table</h1>
-            <p>Fill out the form below to reserve a table at Ahara. We look forward to serving you!</p>
-        </div>
-    </section>
-
-    <main>
-        <section class="form">
-            <h2>Book your table</h2>
-            <form id="reservation-form" onsubmit="saveReservation(event)">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="phone">Phone:</label>
-                <input type="tel" id="phone" name="phone" required>
-
-                <label for="date">Date:</label>
-                <input type="date" id="date" name="date" required>
-
-                <label for="time">Time:</label>
-                <select id="time" name="time" required></select>
-
-                <script>
-                    const select = document.getElementById('time');
-                    
-                    let start = new Date();
-                    start.setHours(11, 30, 0, 0);  // 11:30 AM
-                    const end = new Date();
-                    end.setHours(22, 0, 0, 0);  // 10:00 PM
-                
-                    while (start <= end) {
-                        const option = document.createElement('option');
-                        option.value = start.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: true });
-                        option.textContent = start.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: true });
-                        select.appendChild(option);
-                        
-                        // Increment by 15 minutes
-                        start.setMinutes(start.getMinutes() + 15);
-                    }
-                </script>
-
-                <label for="guests">Number of Guests:</label>
-                <select id="guests" name="guests" required>
-                    <option value="1">1 Person</option>
-                    <option value="2">2 People</option>
-                    <option value="3">3 People</option>
-                    <option value="4">4 People</option>
-                    <option value="5+">5+ People</option>
-                </select>
-
-                <label for="special-requests">Special Requests (Optional):</label>
-                <textarea id="special-requests" name="special-requests"
-                    placeholder="Please let us know if you have any dietary restrictions or special requests"></textarea>
-
-                <button type="submit" class="btn">Reserve Table</button>
-            </form>
-
-            <p id="status"></p>
-            <div id="reservations"></div>
-        </section>
-
-
-        
-
-        <button onclick="clearReservations()">Clear Reservations</button>
-
-        <section class="contact-info">
-            <h2>Contact Information</h2>
-            <p>For any questions or concerns, please contact us at:</p>
-            <p><strong>Phone: </strong>(123) 456-789</p>
-            <p><strong>Email: </strong>contact@ahara.com</p>
-            <p><strong>Address: </strong>600 Brewer Dr, Monroe, North Carolina</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3269.377034576369!2d-80.57004062420464!3d34.97221957282438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88543118eb544be7%3A0x1edfe22383b7f716!2s600%20Brewer%20Dr%2C%20Monroe%2C%20NC%2028112!5e0!3m2!1sen!2sus!4v1742787017003!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 by Ahara. All rights reserved.</p>
-    </footer>
-
-    <script type = "module" src="reservations.js"></script>
+    <div class="thank-you-container">
+        <h1>Thank You!</h1>
+        <p>Your reservation has been successfully created.</p>
+        <a href="index.html" class="home-button">Go to Home</a>
+    </div>
 </body>
 </html>
