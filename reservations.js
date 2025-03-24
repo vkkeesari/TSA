@@ -1,6 +1,10 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js";
 import { getDatabase, ref, set, get, onValue } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-database.js";
 
+
+window.saveReservation = saveReservation;
+window.clearReservations = clearReservations;
+
 // Firebase Configuration
 const firebaseConfig = {
     apiKey: "AIzaSyDu2f71DLUEX73Vi5ccIe47FxYw2K2l-Vg",
