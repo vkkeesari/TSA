@@ -67,7 +67,7 @@ nav {
 }
 
 .hero {
-    height: 50vh;
+    height: 40vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -85,7 +85,7 @@ nav {
 
 .hero h1 {
     margin-bottom: 50px;
-    font-size: 80px;
+    font-size: 40px;
     color: #f4a261;
     text-shadow: 0 0 10px #f4a261;
     margin: 0;
