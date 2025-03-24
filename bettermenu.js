@@ -1,4 +1,3 @@
-// Add animations on scroll
 window.addEventListener('scroll', () => {
     const items = document.querySelectorAll('.menu-item');
 
