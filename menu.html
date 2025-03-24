@@ -3,227 +3,272 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahara Restaurant Menu</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-        }
-        h2 {
-            color: #333;
-            text-align: center;
-            margin-top: 40px;
-        }
-        .menu-items {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            margin: 0 auto;
-            max-width: 1200px;
-        }
-        .menu-item {
-            background-color: #fff;
-            border-radius: 8px;
-            margin: 10px;
-            padding: 15px;
-            width: 250px;
-            text-align: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .menu-item img {
-            width: 100%;
-            height: 180px;
-            object-fit: cover;
-            border-radius: 8px;
-        }
-        .price {
-            font-size: 1.2em;
-            font-weight: bold;
-            color: #e67e22;
-            margin-top: 10px;
-        }
-        .menu-item p {
-            font-size: 1em;
-            color: #555;
-            margin: 10px 0;
-        }
-        .menu-item h3 {
-            font-size: 1.5em;
-            color: #333;
-            margin: 10px 0;
-        }
-    </style>
+    <title>Ahara Menu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Link to the external CSS file (styles.css) -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Ahara Restaurant Menu</h1>
-        <p>Welcome to Ahara, a place for healthy and flavorful vegetarian dishes!</p>
+        <h1>Ahara - Vegetarian Delights</h1>
+        <p>Your go-to place for wholesome vegetarian meals</p>
     </header>
 
     <!-- Appetizers Section -->
-    <h2>Appetizers</h2>
-    <div class="menu-items">
+    <div class="menu-section">
+        <h2 class="section-title">Appetizers</h2>
         <div class="menu-item">
-            <img src="gobi-manchurian.jpg" alt="Gobi Manchurian">
             <h3>Gobi Manchurian</h3>
             <p>Crispy cauliflower florets tossed in a bold Indo-Chinese chili-garlic sauce. Spicy, tangy, and packed with flavor.</p>
-            <span class="price">$10.99</span>
+            <p class="price">$10.99</p>
+            <a href="#">Order Now</a>
         </div>
         <div class="menu-item">
-            <img src="chili-paneer.jpg" alt="Chili Paneer">
             <h3>Chili Paneer</h3>
             <p>Crispy, spiced paneer tossed with curry leaves, chilies, and garlic. Fiery, flavorful, and perfect with mint chutney.</p>
-            <span class="price">$9.99</span>
+            <p class="price">$9.99</p>
+            <a href="#">Order Now</a>
         </div>
         <div class="menu-item">
-            <img src="pani-puri.jpg" alt="Pani Puri">
             <h3>Pani Puri</h3>
             <p>Crispy, hollow puris filled with spicy, tangy tamarind water, mashed potatoes, and chickpeas.</p>
-            <span class="price">$6.99</span>
+            <p class="price">$6.99</p>
+            <a href="#">Order Now</a>
         </div>
         <div class="menu-item">
-            <img src="steamed-muthiya.jpg" alt="Steamed Muthiya">
             <h3>Steamed Muthiya</h3>
             <p>Gujarati dumplings made from bottle gourd, chickpea flour, and spices, steamed and lightly pan-fried for a crispy edge.</p>
-            <span class="price">$6.99</span>
-        </div>
-    </div>
-
-    <!-- Desserts Section -->
-    <h2>Deserts</h2>
-    <div class="menu-items">
-        <div class="menu-item">
-            <img src="jalebi.jpg" alt="Jalebi">
-            <h3>Jalebi</h3>
-            <p>Crispy, deep-fried spirals soaked in fragrant sugar syrup.</p>
-            <span class="price">$7.99</span>
-        </div>
-        <div class="menu-item">
-            <img src="gulab-jamun.jpg" alt="Gulab Jamun">
-            <h3>Gulab Jamun</h3>
-            <p>Deep-fried milk-based dumplings soaked in saffron-cardamom sugar syrup.</p>
-            <span class="price">$4.99</span>
-        </div>
-        <div class="menu-item">
-            <img src="badam-katli.jpg" alt="Badam Katli">
-            <h3>Badam Katli</h3>
-            <p>A creamy and smooth fudge made from almonds and natural sweeteners.</p>
-            <span class="price">$9.99</span>
-        </div>
-        <div class="menu-item">
-            <img src="kaju-katli.jpg" alt="Kaju Katli">
-            <h3>Kaju Katli</h3>
-            <p>A creamy and smooth fudge made from almonds and natural sweeteners.</p>
-            <span class="price">$9.99</span>
+            <p class="price">$6.99</p>
+            <a href="#">Order Now</a>
         </div>
     </div>
 
     <!-- Main Courses Section -->
-    <h2>Main Courses</h2>
-    <div class="menu-items">
+    <div class="menu-section">
+        <h2 class="section-title">Main Courses</h2>
         <div class="menu-item">
-            <img src="vegetable-biryani.jpg" alt="Vegetable Biryani">
             <h3>Vegetable Biryani</h3>
-            <p>A fragrant rice dish with mixed vegetables, infused with aromatic spices, and served with raita.</p>
-            <span class="price">$14.99</span>
+            <p>Aromatic basmati rice cooked with vegetables and a blend of spices, served with cooling raita.</p>
+            <p class="price">$14.99</p>
+            <a href="#">Order Now</a>
         </div>
         <div class="menu-item">
-            <img src="chole-bhature.jpg" alt="Chole Bhature">
             <h3>Chole Bhature</h3>
             <p>Spicy chickpeas served with fluffy, deep-fried bread.</p>
-            <span class="price">$12.99</span>
+            <p class="price">$12.99</p>
+            <a href="#">Order Now</a>
         </div>
         <div class="menu-item">
-            <img src="dosa-with-sambar.jpg" alt="Dosa with Sambar">
             <h3>Dosa with Sambar</h3>
             <p>A crisp, thin rice pancake served with spicy sambar (lentil stew).</p>
-            <span class="price">$9.99</span>
+            <p class="price">$9.99</p>
+            <a href="#">Order Now</a>
         </div>
         <div class="menu-item">
-            <img src="khichdi.jpg" alt="Khichdi">
             <h3>Khichdi</h3>
             <p>Rice and lentils, flavored with cumin, turmeric, and ginger.</p>
-            <span class="price">$11.99</span>
+            <p class="price">$11.99</p>
+            <a href="#">Order Now</a>
         </div>
         <div class="menu-item">
-            <img src="pesarattu.jpg" alt="Pesarattu">
             <h3>Pesarattu</h3>
             <p>Protein-packed pancake made from ground green moong dal.</p>
-            <span class="price">$11.99</span>
+            <p class="price">$11.99</p>
+            <a href="#">Order Now</a>
         </div>
         <div class="menu-item">
-            <img src="pau-bhaji.jpg" alt="Pau Bhaji">
             <h3>Pau Bhaji</h3>
             <p>Spicy mash of vegetables served with soft, buttered buns.</p>
-            <span class="price">$15.99</span>
+            <p class="price">$15.99</p>
+            <a href="#">Order Now</a>
         </div>
         <div class="menu-item">
-            <img src="bombay-sandwich.jpg" alt="Bombay Sandwich">
             <h3>Bombay Sandwich</h3>
             <p>Sliced potatoes and onions with three types of cheese.</p>
-            <span class="price">$9.99</span>
+            <p class="price">$9.99</p>
+            <a href="#">Order Now</a>
         </div>
         <div class="menu-item">
-            <img src="idli-vada.jpg" alt="Idli & Vada Combo">
-            <h3>Idli & Vada Combo</h3>
-            <p>Soft, fluffy steamed rice cakes, paired with crispy, golden lentil fritters. Served with coconut chutney and hot sambar.</p>
-            <span class="price">$11.99</span>
+            <h3>Idli & Vadda Combo</h3>
+            <p>Soft, fluffy steamed rice cakes, paired with crispy, golden lentil fritters. Served with coconut chutney, and hot sambar.</p>
+            <p class="price">$11.99</p>
+            <a href="#">Order Now</a>
         </div>
         <div class="menu-item">
-            <img src="dhokla.jpg" alt="Dhokla">
             <h3>Dhokla</h3>
             <p>A spongy, savory, steamed cake made from fermented rice and chickpea flour.</p>
-            <span class="price">$11.99</span>
+            <p class="price">$11.99</p>
+            <a href="#">Order Now</a>
         </div>
         <div class="menu-item">
-            <img src="khandavi.jpg" alt="Khandavi">
-            <h3>Khandavi</h3>
-            <p>A savory, soft rolled snack made from gram flour and yogurt, seasoned with mustard seeds, sesame, and coconut.</p>
-            <span class="price">$15.99</span>
+            <h3>Khandhavi</h3>
+            <p>A savory, soft rolled snack made from gram flour and yogurt, seasoned with mustard seeds, sesame seeds, and coconut.</p>
+            <p class="price">$15.99</p>
+            <a href="#">Order Now</a>
         </div>
         <div class="menu-item">
-            <img src="farari-patties.jpg" alt="Farari Patties">
             <h3>Farari Patties</h3>
-            <p>Dough-type potato balls filled with a spicy coconut filling.</p>
-            <span class="price">$10.99</span>
+            <p>Dough type potato balls filled with a spicy coconut filling.</p>
+            <p class="price">$10.99</p>
+            <a href="#">Order Now</a>
         </div>
         <div class="menu-item">
-            <img src="rajwadi-dhokla.jpg" alt="Rajwadi Dhoki">
             <h3>Rajwadi Dhoki</h3>
             <p>Soft chickpea dumpling simmered in a rich yogurt-based curry.</p>
-            <span class="price">$13.99</span>
+            <p class="price">$13.99</p>
+            <a href="#">Order Now</a>
         </div>
     </div>
 
     <!-- Breads Section -->
-    <h2>Breads</h2>
-    <div class="menu-items">
+    <div class="menu-section">
+        <h2 class="section-title">Breads</h2>
         <div class="menu-item">
-            <img src="naan.jpg" alt="Naan">
             <h3>Naan</h3>
             <p>A triangle-shaped flatbread that is baked in an oven, brushed with ghee/butter.</p>
-            <span class="price">$2.99</span>
+            <p class="price">$2.99</p>
+            <a href="#">Order Now</a>
         </div>
         <div class="menu-item">
-            <img src="garlic-naan.jpg" alt="Garlic Naan">
             <h3>Garlic Naan</h3>
             <p>A triangle-shaped flatbread that is baked in an oven, brushed with ghee/butter and garlic.</p>
-            <span class="price">$3.99</span>
+            <p class="price">$3.99</p>
+            <a href="#">Order Now</a>
         </div>
         <div class="menu-item">
-            <img src="garlic-naan.jpg" alt="Garlic Naan">
-            <h3>Garlic Naan</h3>
-            <p>A triangle-shaped flatbread that is baked in an oven, brushed with ghee/butter and garlic.</p>
-            <span class="price">$3.99</span>
+            <h3>Thepla</h3>
+            <p>A spiced Gujarati bread made with whole wheat flour.</p>
+            <p class="price">$4.99</p>
+            <a href="#">Order Now</a>
+        </div>
+    </div>
+
+    <!-- Kebabs Section -->
+    <div class="menu-section">
+        <h2 class="section-title">Kebabs</h2>
+        <div class="menu-item">
+            <h3>Hara Bara Kebab</h3>
+            <p>Made with spinach, peas, potatoes, and spices.</p>
+            <p class="price">$14.99</p>
+            <a href="#">Order Now</a>
+        </div>
+        <div class="menu-item">
+            <h3>Mushroom Tikka Kebab</h3>
+            <p>Marinated mushrooms skewered and grilled for a smoky juicy bite.</p>
+            <p class="price">$13.99</p>
+            <a href="#">Order Now</a>
+        </div>
+        <div class="menu-item">
+            <h3>Tandoori Aloo Kebab</h3>
+            <p>Baby potatoes marinated in yogurt and spices, roasted for a smoky flavor.</p>
+            <p class="price">$14.99</p>
+            <a href="#">Order Now</a>
+        </div>
+        <div class="menu-item">
+            <h3>Tandoori Cauliflower Kebab</h3>
+            <p>Grilled cauliflower florets marinated in a spicy, tangy mix.</p>
+            <p class="price">$16.99</p>
+            <a href="#">Order Now</a>
+        </div>
+    </div>
+
+    <!-- Sizzlers Section -->
+    <div class="menu-section">
+        <h2 class="section-title">Sizzlers</h2>
+        <div class="menu-item">
+            <h3>Tofu Sizzler</h3>
+            <p>Grilled tofu seasoned with tandoori spices and cooked veggies.</p>
+            <p class="price">$13.99</p>
+            <a href="#">Order Now</a>
+        </div>
+        <div class="menu-item">
+            <h3>Paneer Tikka Sizzler</h3>
+            <p>Soft paneer cubes marinated in tandoori spices, grilled and served with sautéed vegetables.</p>
+            <p class="price">$15.99</p>
+            <a href="#">Order Now</a>
+        </div>
+        <div class="menu-item">
+            <h3>Veggie Grilled Sizzler</h3>
+            <p>Grilled seasoned vegetables, like bell peppers, zucchini, okra, etc.</p>
+            <p class="price">$13.99</p>
+            <a href="#">Order Now</a>
+        </div>
+        <div class="menu-item">
+            <h3>Stuffed Capsicum Sizzler</h3>
+            <p>Bell peppers stuffed with spiced mashed potatoes and paneer, grilled.</p>
+            <p class="price">$14.99</p>
+            <a href="#">Order Now</a>
+        </div>
+    </div>
+
+    <!-- Curries Section -->
+    <div class="menu-section">
+        <h2 class="section-title">Curries</h2>
+        <div class="menu-item">
+            <h3>Paneer Tikka Masala</h3>
+            <p>Grilled paneer cubes in a rich, spiced tomato-cream sauce.</p>
+            <p class="price">$17.99</p>
+            <a href="#">Order Now</a>
+        </div>
+        <div class="menu-item">
+            <h3>Bombay Aloo</h3>
+            <p>Potatoes cooked in tomato gravy with spices.</p>
+            <p class="price">$14.99</p>
+            <a href="#">Order Now</a>
+        </div>
+        <div class="menu-item">
+            <h3>Malai Kofta</h3>
+            <p>Spheres of paneer, potatoes, and dry fruits served with creamy cashew gravy.</p>
+            <p class="price">$13.99</p>
+            <a href="#">Order Now</a>
+        </div>
+        <div class="menu-item">
+            <h3>Channa Masala</h3>
+            <p>Spiced chickpeas cooked in a tomato gravy.</p>
+            <p class="price">$14.99</p>
+            <a href="#">Order Now</a>
+        </div>
+        <div class="menu-item">
+            <h3>Soya Mince Curry</h3>
+            <p>Soya cooked in cashew & tomato-based gravy.</p>
+            <p class="price">$13.99</p>
+            <a href="#">Order Now</a>
+        </div>
+    </div>
+
+    <!-- Drinks Section -->
+    <div class="menu-section">
+        <h2 class="section-title">Drinks</h2>
+        <div class="menu-item">
+            <h3>Mango Lassi/Regular</h3>
+            <p class="price">$4.00</p>
+            <a href="#">Order Now</a>
+        </div>
+        <div class="menu-item">
+            <h3>Sheradi no Ras</h3>
+            <p class="price">$2.00</p>
+            <a href="#">Order Now</a>
+        </div>
+        <div class="menu-item">
+            <h3>Ginger Shot</h3>
+            <p class="price">$1.00</p>
+            <a href="#">Order Now</a>
+        </div>
+        <div class="menu-item">
+            <h3>Masala Soda</h3>
+            <p class="price">$2.00</p>
+            <a href="#">Order Now</a>
+        </div>
+        <div class="menu-item">
+            <h3>Dhud Pak</h3>
+            <p class="price">$2.00</p>
+            <a href="#">Order Now</a>
+        </div>
+        <div class="menu-item">
+            <h3>Seri no Ras</h3>
+            <p class="price">$2.00</p>
+            <a href="#">Order Now</a>
+        </div>
+    </div>
+</body>
+</html>
