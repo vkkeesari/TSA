@@ -5,7 +5,7 @@
     font-family: 'Georgia', serif;
 }
 
-body {
+.everything {
     margin: 0;
     padding-top: 80px;
     background-image: url('about-us.jpg');
