@@ -9,7 +9,7 @@ body {
     margin: 0;
     padding-top: 80px;
     background: url('pexels-chanwalrus-958547.jpg') no-repeat center center/cover;
-    color: #fff; /* Changed to white */
+    color: #fff; /* Default stays white, overridden by specific rules below */
 }
 
 .container {
@@ -24,11 +24,11 @@ body {
 header {
     text-align: center;
     padding: 20px;
-    color: #fff; /* Already white, kept for clarity */
+    color: #fff; /* Kept white for nav consistency */
 }
 
 h1, h2 {
-    color: #fff; /* Changed to white */
+    color: #f77f00; /* Changed to orange to match sustainability.html */
     font-family: 'Georgia', serif;
 }
 
@@ -48,7 +48,7 @@ h2 {
 p {
     line-height: 1.8;
     font-size: 16px;
-    color: #fff; /* Changed to white */
+    color: #f77f00; /* Changed to orange to match sustainability.html */
 }
 
 nav {
@@ -68,7 +68,7 @@ nav {
 .logo {
     font-size: 24px;
     font-weight: bold;
-    color: white; /* Already white */
+    color: white; /* Kept white for nav */
 }
 
 .nav-links {
@@ -82,18 +82,18 @@ nav {
 
 .nav-links a {
     text-decoration: none;
-    color: white; /* Already white */
+    color: white; /* Kept white for nav */
     font-size: 18px;
     transition: 0.3s;
 }
 
 .nav-links a:hover {
-    color: #f4a261;
+    color: #f4a261; /* Kept orange hover effect */
 }
 
 .btn {
     background: #f4a261;
-    color: white; /* Already white */
+    color: white; /* Kept white for button text */
     padding: 10px 15px;
     text-decoration: none;
     border-radius: 5px;
