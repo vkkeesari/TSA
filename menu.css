@@ -7,20 +7,20 @@
 
 /* Body Styles */
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f0f8ff; /* Light background color */
-    color: #2f2f2f;
+    font-family: 'Playfair Display', serif; /* Elegant, fancy font */
+    background-color: #2c3e50; /* Dark charcoal blue background */
+    color: #ecf0f1; /* Light gray text color */
     line-height: 1.6;
     font-size: 16px;
 }
 
 /* Header */
 header {
-    background-color: #ff6347; /* Bright red-orange color */
-    color: white;
+    background-color: #34495e; /* Darker blue-gray for header */
+    color: #f39c12; /* Gold accent text */
     text-align: center;
-    padding: 20px 0;
-    border-bottom: 5px solid #f1c40f; /* Yellow border */
+    padding: 30px 0;
+    border-bottom: 5px solid #f39c12; /* Gold border */
 }
 
 header h1 {
@@ -35,16 +35,17 @@ header p {
 
 /* Menu Sections */
 .menu-section {
-    padding: 30px;
+    padding: 40px;
     margin: 20px 0;
-    background-color: #fff8dc; /* Light yellow background */
+    background-color: #34495e; /* Dark grayish-blue */
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: #ecf0f1; /* Light text for readability */
 }
 
 .menu-section h2 {
     font-size: 2.5rem;
-    color: #ff6347; /* Bold red-orange */
+    color: #f39c12; /* Gold color for headings */
     text-align: center;
     margin-bottom: 20px;
     font-weight: bold;
@@ -56,40 +57,40 @@ header p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
-    background-color: #fdfdfd;
-    border: 2px solid #ddd;
+    padding: 20px 25px;
+    background-color: #2c3e50; /* Darker background for items */
+    border: 2px solid #7f8c8d; /* Darker border for menu items */
     margin-bottom: 15px;
     border-radius: 10px;
     transition: background-color 0.3s ease;
 }
 
 .menu-item:hover {
-    background-color: #ffe4b5; /* Light golden color on hover */
+    background-color: #7f8c8d; /* Lighter hover background */
 }
 
 .menu-item h3 {
-    font-size: 1.6rem;
-    color: #333;
+    font-size: 1.8rem;
+    color: #ecf0f1;
     font-weight: bold;
 }
 
 .menu-item p {
     font-size: 1.1rem;
-    color: #555;
+    color: #bdc3c7; /* Lighter gray color for descriptions */
     margin-top: 10px;
 }
 
 .price {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: bold;
-    color: #ff6347; /* Red-orange */
+    color: #f39c12; /* Gold accent for pricing */
 }
 
 /* Footer */
 footer {
-    background-color: #ff6347;
-    color: white;
+    background-color: #34495e; /* Dark footer */
+    color: #f39c12; /* Gold footer text */
     text-align: center;
     padding: 20px 0;
     font-size: 1rem;
@@ -98,12 +99,17 @@ footer {
 /* Special Styles */
 .menu-item .price {
     font-size: 1.8rem;
-    color: #d35400; /* Dark orange */
+    color: #f39c12; /* Gold for price */
 }
 
 .menu-item h3 {
-    font-size: 1.6rem;
-    color: #2c3e50;
+    font-size: 1.8rem;
+    color: #ecf0f1; /* White text for menu items */
+}
+
+/* Custom Font and Styling for Headers */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
 }
 
 /* Add Patterns for Background (optional) */
@@ -115,15 +121,9 @@ body {
 
 /* Menu Item Price */
 .price {
-    font-size: 1.4rem;
-    color: #e67e22;
+    font-size: 1.8rem;
+    color: #f39c12; /* Gold color for prices */
     font-weight: bold;
-    text-align: center;
-}
-
-/* Custom Font and Styling for Headers */
-h1, h2, h3 {
-    font-family: 'Poppins', sans-serif;
 }
 
 /* Responsive Design */
