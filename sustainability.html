@@ -4,16 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Farm-to-Table and Sustainability - Ahara</title>
-    <link rel="stylesheet" href="styles.css">
     <style>
         body {
             margin: 0;
             padding: 0;
+            font-family: Arial, sans-serif;
         }
         .farm-section {
             background: url('farmtotable.jpeg') no-repeat center center;
             background-size: cover;
-            margin: 0;
             padding: 40px 20px;
             min-height: 100vh;
             color: #fff;
@@ -22,18 +21,22 @@
             justify-content: center;
         }
         .container {
-            max-width: 800px;
+            max-width: 1200px;
             background-color: rgba(0, 0, 0, 0.7);
             padding: 20px;
             border-radius: 10px;
-            text-align: center;
         }
         h1, h2 {
             color: #f77f00;
             margin-bottom: 20px;
         }
+        .dropdown-section {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
         .dropdown {
-            margin: 20px 0;
+            width: 30%;
         }
         .dropdown-button {
             background-color: #f77f00;
@@ -56,84 +59,61 @@
     </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">Ahara</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="bettermenu.html">Menu</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="sustainability.html">Farm-to-Table</a></li>
-                <li><a href="contact.html">Feedback</a></li>
-            </ul>
-            <a href="reserve.html" class="btn">Reserve a Table</a>
-        </nav>
-    </header>
     <section class="farm-section">
         <div class="container">
-            <h1>Our Farm-to-Table Philosophy</h1>
-
-            <div class="dropdown">
-                <button class="dropdown-button" onclick="toggleDropdown('sourcing')">Our Sourcing</button>
-                <div class="dropdown-content" id="sourcing">
-                    <p>
-                        At Ahara, we believe that exceptional cuisine begins with exceptional ingredients. 
-                        We meticulously source the freshest, locally grown produce and the finest legumes, grains, and dairy from trusted suppliers who share our commitment to quality and sustainability.
-                        Our partnerships with organic farms ensure that every ingredient that enters our kitchen is free from artificial additives and pesticides, allowing us to serve food that is as pure as it is flavorful.
-                    </p>
-                </div>
-            </div>
-
-            <div class="dropdown">
-                <button class="dropdown-button" onclick="toggleDropdown('spices')">Our Spices</button>
-                <div class="dropdown-content" id="spices">
-                    <p>
-                        Spices are the soul of Indian cuisine, and at Ahara, we treat them with the reverence they deserve.
-                        We source whole spices directly from their regions of origin, ensuring they retain their potency and depth of flavor. 
-                        Each spice is carefully roasted and ground in-house to unlock its full aromatic potential, creating the perfect balance of heat, earthiness, and warmth in every dish. 
-                        Whether it's the smoky depth of cumin, the floral notes of cardamom, or the fiery touch of Kashmiri chili, our spice blends are crafted to transport you to the heart of India with every bite.
-                    </p>
-                </div>
-            </div>
-
-            <div class="dropdown">
-                <button class="dropdown-button" onclick="toggleDropdown('techniques')">Our Techniques</button>
-                <div class="dropdown-content" id="techniques">
-                    <p>
-                        Authenticity is at the heart of our cooking philosophy. 
-                        We honor traditional Indian culinary methods passed down through generations while incorporating modern refinements to enhance flavor and presentation. 
-                        Our chefs expertly employ slow-cooking, hand-ground spice blends, and time-honored fermentation techniques to bring out the natural richness of every dish. 
-                        From the art of tempering (tadka) to the delicate process of making fresh paneer in-house, we take pride in every step of our craft to deliver an unparalleled dining experience.
-                    </p>
-                </div>
-            </div>
+            <h1>Our Philosophy</h1>
 
             <h2>Sustainability at Heart</h2>
             <p>
-                At Ahara, sustainability is at the core of our mission. 
-                We source our produce from pastures that utilize sustainable farming techniques, ensuring that every ingredient we use is both fresh and environmentally responsible.
-                Our farmers practice drip irrigation to conserve water, cover cropping to enrich the soil and prevent erosion, and crop rotation to maintain biodiversity and soil health.
-                By embracing these methods, we not only support the land that nourishes us but also ensure that our ingredients retain their natural flavor and nutritional value. 
-                This commitment to sustainability allows us to serve food that is not only authentic and wholesome but also aligned with our vision of preserving the environment for future generations.
+                Sustainability is at the core of our mission. We source produce from local farms that
+                practice environmentally responsible methods, ensuring freshness and flavor.
             </p>
 
             <h2>Preparation with Passion</h2>
             <p>
-                At Ahara, we believe that freshness is key to delivering authentic and flavorful Indian cuisine.
-                That’s why we prepare every dish fresh to order, ensuring that each bite is packed with vibrant taste and nutrition. 
-                Our produce is sourced weekly from local farms in North Carolina, where sustainable practices ensure the highest quality ingredients. 
-
+                Every dish is prepared fresh to order, showcasing the vibrancy of North Carolina's locally
+                sourced ingredients.
             </p>
+
+            <h2>Farm-to-Table</h2>
+            <p>
+                Exceptional cuisine begins with the finest ingredients sourced from organic and sustainable farms.
+            </p>
+
+            <div class="dropdown-section">
+                <div class="dropdown">
+                    <button class="dropdown-button" onclick="toggleDropdown('spices')">Our Spices</button>
+                    <div class="dropdown-content" id="spices">
+                        <p>
+                            Spices are sourced directly from their regions of origin, ensuring bold flavors.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropdown-button" onclick="toggleDropdown('techniques')">Our Techniques</button>
+                    <div class="dropdown-content" id="techniques">
+                        <p>
+                            Our chefs use traditional Indian methods like slow-cooking and tempering for authentic flavors.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropdown-button" onclick="toggleDropdown('sourcing')">Our Sourcing</button>
+                    <div class="dropdown-content" id="sourcing">
+                        <p>
+                            We meticulously source fresh, local, and organic ingredients for every dish.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <script>
         function toggleDropdown(id) {
             const content = document.getElementById(id);
-            if (content.style.display === "none" || content.style.display === "") {
-                content.style.display = "block";
-            } else {
-                content.style.display = "none";
-            }
+            content.style.display = content.style.display === "block" ? "none" : "block";
         }
     </script>
 </body>
