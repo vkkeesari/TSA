@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Georgia', serif;
+    text-align: center; /* Added to align text globally */
 }
 
 body {
@@ -57,7 +58,7 @@ p {
 
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Centers nav items horizontally */
     align-items: center;
     padding: 15px 10%;
     position: fixed;
@@ -73,11 +74,14 @@ nav {
     font-size: 24px;
     font-weight: bold;
     color: white;
+    margin: 0 20px; /* Adds spacing around logo */
 }
 
 .nav-links {
     list-style: none;
     display: flex;
+    justify-content: center; /* Centers links within the list */
+    margin: 0 20px; /* Adds spacing around links */
 }
 
 .nav-links li {
@@ -103,6 +107,7 @@ nav {
     text-decoration: none;
     border-radius: 5px;
     transition: background 0.3s, transform 0.3s;
+    margin: 0 20px; /* Adds spacing around button */
 }
 
 .btn:hover {
@@ -112,8 +117,8 @@ nav {
 
 /* New Description Sections */
 .description {
-    padding: 60px 0; /* Space between sections */
-    opacity: 0; /* Hidden by default */
+    padding: 60px 0;
+    opacity: 0;
 }
 
 /* Reset transform states when not animated */

@@ -73,7 +73,7 @@
             <h1>Get in Touch with Us</h1>
             <p>Have questions, feedback, or want to learn more about Ahara? We'd love to hear from you!</p>
             <h2>Feedback Form</h2>
-            <form action="submit_form.php" method="POST">
+            <form id="contact-form">
                 <div class="form-group">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" placeholder="Your Name" required>
@@ -89,10 +89,19 @@
                 <button type="submit">Send Message</button>
             </form>
             <h2>Contact Us</h2>
-            <p>1205 Ladera Dr, NC 28173</p>
+            <p>600 Brewer Dr, Monroe, NC 28112</p>
             <p>Phone: (123) 456-7890</p>
             <p>Email: contact@ahara.com</p>
         </div>
     </section>
+
+    <script>
+        
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            alert('Your message has been submitted successfully!');
+            this.reset(); 
+        });
+    </script>
 </body>
 </html>
