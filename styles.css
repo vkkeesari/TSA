@@ -33,7 +33,7 @@ header {
 }
 
 h1, h2 {
-    color: #f77f00;
+    color: #f4a261;
     font-family: 'Georgia', serif;
     animation: slideIn 0.8s ease-out;
 }
@@ -54,7 +54,7 @@ h2 {
 p {
     line-height: 1.8;
     font-size: 16px;
-    color: #f77f00;
+    color: #f4a261;
     animation: fadeIn 1.2s ease-in-out 0.3s;
     animation-fill-mode: both;
 }
