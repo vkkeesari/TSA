@@ -13,7 +13,7 @@ body {
     margin: 0;
     padding-top: 80px;
     background: url('pexels-shantanu-pal-938952-2802527.jpg') no-repeat center center/cover;
-    color: #fff; /* Default text color is white */
+    color: #fff; 
     text-align: center;
 }
 
@@ -34,7 +34,7 @@ header {
 }
 
 h1, h2 {
-    color: #f4a261; /* Headers remain orange */
+    color: #f4a261;
     font-family: 'Georgia', serif;
     animation: slideIn 0.8s ease-out;
 }
@@ -55,7 +55,7 @@ h2 {
 p {
     line-height: 1.8;
     font-size: 16px;
-    color: #fff; /* Changed to white from #f4a261 */
+    color: #fff;
     animation: fadeIn 1.2s ease-in-out 0.3s;
     animation-fill-mode: both;
 }
@@ -77,7 +77,7 @@ nav {
 .logo {
     font-size: 24px;
     font-weight: bold;
-    color: white; /* Already white */
+    color: white;
 }
 
 .nav-links {
@@ -92,7 +92,7 @@ nav {
 
 .nav-links a {
     text-decoration: none;
-    color: white; /* Already white */
+    color: white;
     font-size: 18px;
     transition: 0.3s;
 }
@@ -103,7 +103,7 @@ nav {
 
 .btn {
     background: #f4a261;
-    color: white; /* Already white */
+    color: white;
     padding: 10px 15px;
     text-decoration: none;
     border-radius: 5px;
@@ -114,12 +114,10 @@ nav {
     background: #e76f51;
 }
 
-/* About Section with Bottom Spacing */
 .about-section {
     padding-bottom: 80px;
 }
 
-/* Staff Intro Section with No Background */
 .staff-intro .container {
     background-color: transparent;
     box-shadow: none;
@@ -135,13 +133,11 @@ nav {
     margin-bottom: 0;
 }
 
-/* Description Sections */
 .description {
     padding: 60px 0;
     opacity: 0;
 }
 
-/* Reset transform states when not animated */
 .desc-1 {
     transform: translateX(-50px);
 }
@@ -166,7 +162,6 @@ nav {
     transform: translateX(50px);
 }
 
-/* Animate when class is added */
 .desc-1.animate {
     animation: slideInLeft 0.8s ease-out forwards;
 }
@@ -191,7 +186,6 @@ nav {
     animation: slideInRight 0.8s ease-out forwards;
 }
 
-/* Keyframes */
 @keyframes fadeIn {
     from {
         opacity: 0;
