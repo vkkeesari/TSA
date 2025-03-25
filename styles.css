@@ -117,12 +117,25 @@ nav {
 
 /* About Section with Bottom Spacing */
 .about-section {
-    padding-bottom: 80px; /* Adds space after "Our Mission" */
+    padding-bottom: 80px;
 }
 
-/* Staff Intro Section with Increased Spacing */
+/* Staff Intro Section with No Background */
+.staff-intro .container {
+    background-color: transparent; /* Removes black background */
+    box-shadow: none; /* Removes shadow for consistency */
+    padding: 0; /* Removes padding to avoid extra space */
+}
+
 .staff-intro {
-    padding: 80px 0; /* Increased padding for clear separation */
+    padding: 80px 0; /* Maintains spacing */
+}
+
+.staff-intro h2 {
+    font-size: 36px; /* Bigger text (matches h1 size) */
+    border-bottom: none; /* Removes orange bar */
+    padding-bottom: 0; /* Removes padding tied to border */
+    margin-bottom: 0; /* Ensures no extra space below */
 }
 
 /* Description Sections */
@@ -258,5 +271,9 @@ nav {
 
     .btn {
         display: none;
+    }
+
+    .staff-intro h2 {
+        font-size: 28px; /* Slightly smaller on mobile for readability */
     }
 }
