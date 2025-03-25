@@ -127,7 +127,7 @@ function updateTimeAvailability() {
 
         if (reservations[date] && reservations[date][time] && reservations[date][time].length >= 3) {
             option.disabled = true;
-            option.classList.add("grayed-out");  // Add class for styling
+            option.classList.add("grayed-out");
         } else {
             option.disabled = false;
             option.classList.remove("grayed-out");
