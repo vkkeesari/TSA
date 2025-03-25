@@ -13,6 +13,41 @@
             color: #f77f00; /* Making all text orange */
             text-align: center; /* Aligning all text to center */
         }
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #333;
+            z-index: 1000;
+            padding: 10px 0;
+        }
+        .logo {
+            color: #f77f00;
+            font-weight: bold;
+            font-size: 24px;
+            display: inline-block;
+        }
+        .nav-links {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+        }
+        .nav-links li {
+            display: inline;
+            margin: 0 15px;
+        }
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .btn {
+            background-color: #f77f00;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
         .farm-section {
             background: url('farmtotable.jpeg') no-repeat center center;
             background-size: cover;
@@ -21,6 +56,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            padding-top: 150px; /* Moves all content further down */
         }
         .container {
             max-width: 1200px;
