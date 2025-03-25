@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Georgia', serif;
 }
+
 html, body {
     overflow-x: hidden;
 }
@@ -12,7 +13,7 @@ body {
     margin: 0;
     padding-top: 80px;
     background: url('pexels-chanwalrus-958547.jpg') no-repeat center center/cover;
-    color: #fff;
+    color: #fff; /* Default text color is white */
     text-align: center;
 }
 
@@ -33,7 +34,7 @@ header {
 }
 
 h1, h2 {
-    color: #f77f00;
+    color: #f4a261; /* Headers remain orange */
     font-family: 'Georgia', serif;
     animation: slideIn 0.8s ease-out;
 }
@@ -54,68 +55,63 @@ h2 {
 p {
     line-height: 1.8;
     font-size: 16px;
-    color: #f77f00;
+    color: #fff; /* Changed to white from #f4a261 */
     animation: fadeIn 1.2s ease-in-out 0.3s;
     animation-fill-mode: both;
 }
 
 nav {
     display: flex;
-    justify-content: space-between; /* Matches first CSS */
+    justify-content: space-between;
     align-items: center;
-    padding: 15px 10%; /* Matches first CSS */
+    padding: 15px 10%;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.7); /* Matches first CSS */
-    backdrop-filter: blur(10px); /* Matches first CSS */
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
     z-index: 1000;
 }
 
 .logo {
-    font-size: 24px; /* Matches first CSS */
-    font-weight: bold; /* Matches first CSS */
-    color: white; /* Matches first CSS */
-    /* No margin to match first CSS */
+    font-size: 24px;
+    font-weight: bold;
+    color: white; /* Already white */
 }
 
 .nav-links {
     list-style: none;
     display: flex;
     justify-content: center;
-    /* Removed margin: 0 20px to match first CSS */
 }
 
 .nav-links li {
-    margin: 0 15px; /* Matches first CSS */
+    margin: 0 15px;
 }
 
 .nav-links a {
     text-decoration: none;
-    color: white;
+    color: white; /* Already white */
     font-size: 18px;
-    transition: 0.3s; /* Matches first CSS (applies to all properties) */
+    transition: 0.3s;
 }
 
 .nav-links a:hover {
-    color: #f4a261; /* Matches first CSS */
-    /* Removed transform: scale(1.1) to match first CSS */
+    color: #f4a261;
 }
 
 .btn {
-    background: #f4a261; /* Matches first CSS */
-    color: white;
-    padding: 10px 15px; /* Matches first CSS */
+    background: #f4a261;
+    color: white; /* Already white */
+    padding: 10px 15px;
     text-decoration: none;
-    border-radius: 5px; /* Matches first CSS */
-    transition: 0.3s; /* Matches first CSS (applies to all properties) */
-    /* Removed margin: 0 20px to match first CSS */
+    border-radius: 5px;
+    transition: 0.3s;
 }
 
 .btn:hover {
-    background: #e76f51; /* Matches first CSS */
-    /* Removed transform: scale(1.1) and animation to match first CSS */
+    background: #e76f51;
 }
 
 /* About Section with Bottom Spacing */
