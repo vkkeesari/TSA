@@ -44,7 +44,7 @@ h2 {
     font-size: 24px;
     margin-top: 30px;
     margin-bottom: 15px;
-    border-bottom: 2px solid #f4a261; /* Orange bar for all h2 */
+    border-bottom: 2px solid #f4a261;
     padding-bottom: 5px;
 }
 
@@ -58,7 +58,7 @@ p {
 
 nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-between; /* Matches first CSS */
     align-items: center;
     padding: 15px 10%;
     position: fixed;
@@ -74,7 +74,7 @@ nav {
     font-size: 24px;
     font-weight: bold;
     color: white;
-    margin: 0 20px;
+    /* No margin to match first CSS */
 }
 
 .nav-links {
@@ -112,7 +112,7 @@ nav {
 
 .btn:hover {
     background: #e76f51;
-    animation: pulse 0.5s infinite;
+    transform: scale(1.1); /* Kept transform, removed animation */
 }
 
 /* About Section with Bottom Spacing */
@@ -122,18 +122,18 @@ nav {
 
 /* Staff Intro Section with No Background */
 .staff-intro .container {
-    background-color: transparent; /* No background */
-    box-shadow: none; /* No shadow */
-    padding: 0; /* Minimal padding */
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0;
 }
 
 .staff-intro {
-    padding: 80px 0; /* Maintains spacing */
+    padding: 80px 0;
 }
 
 .staff-intro h2 {
-    font-size: 36px; /* Bigger text */
-    margin-bottom: 0; /* Keeps spacing tight below */
+    font-size: 36px;
+    margin-bottom: 0;
 }
 
 /* Description Sections */
@@ -272,6 +272,6 @@ nav {
     }
 
     .staff-intro h2 {
-        font-size: 28px; /* Adjusted for smaller screens */
+        font-size: 28px;
     }
 }
