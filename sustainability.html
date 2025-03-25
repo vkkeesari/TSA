@@ -47,6 +47,18 @@
             line-height: 1.8;
             margin-bottom: 30px; /* Added spacing between paragraphs */
         }
+        .farm-content {
+            margin-top: 30px; /* Adding space between different Farm-to-Table subsections */
+        }
+        .description {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        .description.animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
     </style>
 </head>
 <body>
@@ -65,10 +77,10 @@
     </header>
 
     <section class="farm-section">
-        <div class="container">
+        <div class="container description">
             <h1>Our Farm-to-Table Philosophy</h1>
             
-            <div class="farm-content">
+            <div class="farm-content description">
                 <h3>Our Sourcing</h3>
                 <p>
                     At Ahara, we believe that exceptional cuisine begins with exceptional ingredients. 
@@ -76,7 +88,7 @@
                     Our partnerships with organic farms ensure that every ingredient that enters our kitchen is free from artificial additives and pesticides, allowing us to serve food that is as pure as it is flavorful.
                 </p>
             </div>
-            <div class="farm-content">
+            <div class="farm-content description">
                 <h3>Our Techniques</h3>
                 <p>
                     Authenticity is at the heart of our cooking philosophy. We honor traditional Indian culinary methods passed down through generations while incorporating modern refinements to enhance flavor and presentation.
@@ -84,7 +96,7 @@
                     From the art of tempering (tadka) to the delicate process of making fresh paneer in-house, we take pride in every step of our craft to deliver an unparalleled dining experience.
                 </p>
             </div>
-            <div class="farm-content">
+            <div class="farm-content description">
                 <h3>Our Spices</h3>
                 <p>
                     Spices are the soul of Indian cuisine, and at Ahara, we treat them with the reverence they deserve.
@@ -94,22 +106,41 @@
                 </p>
             </div>
 
-            <h2>Sustainability at Heart</h2>
-            <p>
-                At Ahara, sustainability is at the core of our mission.
-                We source our produce from pastures that utilize sustainable farming techniques, ensuring that every ingredient we use is both fresh and environmentally responsible.
-                Our farmers practice drip irrigation to conserve water, cover cropping to enrich the soil and prevent erosion, and crop rotation to maintain biodiversity and soil health.
-                By embracing these methods, we not only support the land that nourishes us but also ensure that our ingredients retain their natural flavor and nutritional value.
-                This commitment to sustainability allows us to serve food that is not only authentic and wholesome but also aligned with our vision of preserving the environment for future generations.
-            </p>
+            <div class="description">
+                <h2>Sustainability at Heart</h2>
+                <p>
+                    At Ahara, sustainability is at the core of our mission.
+                    We source our produce from pastures that utilize sustainable farming techniques, ensuring that every ingredient we use is both fresh and environmentally responsible.
+                    Our farmers practice drip irrigation to conserve water, cover cropping to enrich the soil and prevent erosion, and crop rotation to maintain biodiversity and soil health.
+                    By embracing these methods, we not only support the land that nourishes us but also ensure that our ingredients retain their natural flavor and nutritional value.
+                    This commitment to sustainability allows us to serve food that is not only authentic and wholesome but also aligned with our vision of preserving the environment for future generations.
+                </p>
+            </div>
 
-            <h2>Preparation with Passion</h2>
-            <p>
-                At Ahara, we believe that freshness is key to delivering authentic and flavorful Indian cuisine.
-                That’s why we prepare every dish fresh to order, ensuring that each bite is packed with vibrant taste and nutrition.
-                Our produce is sourced weekly from local farms in North Carolina, where sustainable practices ensure the highest quality ingredients.
-            </p>
+            <div class="description">
+                <h2>Preparation with Passion</h2>
+                <p>
+                    At Ahara, we believe that freshness is key to delivering authentic and flavorful Indian cuisine.
+                    That’s why we prepare every dish fresh to order, ensuring that each bite is packed with vibrant taste and nutrition.
+                    Our produce is sourced weekly from local farms in North Carolina, where sustainable practices ensure the highest quality ingredients.
+                </p>
+            </div>
         </div>
     </section>
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                } else {
+                    entry.target.classList.remove('animate');
+                }
+            });
+        }, { threshold: 0.5 });
+
+        document.querySelectorAll('.description').forEach(desc => {
+            observer.observe(desc);
+        });
+    </script>
 </body>
 </html>
