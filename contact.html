@@ -73,7 +73,7 @@
             <h1>Get in Touch with Us</h1>
             <p>Have questions, feedback, or want to learn more about Ahara? We'd love to hear from you!</p>
             <h2>Feedback Form</h2>
-            <form action="submit_form.php" method="POST">
+            <form id="contact-form">
                 <div class="form-group">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" placeholder="Your Name" required>
@@ -94,5 +94,14 @@
             <p>Email: contact@ahara.com</p>
         </div>
     </section>
+
+    <script>
+        // JavaScript to handle form submission and reload the page
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting the traditional way
+            alert('Your message has been submitted successfully!');
+            this.reset(); // Reset the form
+        });
+    </script>
 </body>
 </html>
