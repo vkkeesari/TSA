@@ -8,7 +8,7 @@
         body {
             margin: 0;
             padding: 0;
-            font-family: "Goergia", serif;
+            font-family: Arial, sans-serif;
             background: url('pexels-gaurav-kumar-1281378-18488312.jpg') no-repeat center center fixed;
             background-size: cover;
         }
@@ -68,7 +68,13 @@
 
     <script>
         function generateReservationNumber() {
-            const reservationNumber = Math.floor(100000 + Math.random() * 900000);
+            let reservationNumber = localStorage.getItem('reservationNumber');
+            
+            if (!reservationNumber) {
+                reservationNumber = Math.floor(100000 + Math.random() * 900000);
+                localStorage.setItem('reservationNumber', reservationNumber);
+            }
+
             document.getElementById('reservation-number').textContent = reservationNumber;
         }
 
