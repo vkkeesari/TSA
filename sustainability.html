@@ -11,6 +11,7 @@
             padding: 0;
             font-family: Arial, sans-serif;
             color: #f77f00; /* Making all text orange */
+            text-align: center; /* Aligning all text to center */
         }
         .farm-section {
             background: url('farmtotable.jpeg') no-repeat center center;
@@ -34,49 +35,12 @@
             font-size: 2.5rem;
         }
         h2 {
-            font-size: 1.8rem;
+            font-size: 2rem;
+            margin-top: 50px; /* Increased spacing for better layout */
         }
         p {
-            line-height: 1.6;
-        }
-        /* Adding extra spacing between sections */
-        .container > h1 {
-            margin-bottom: 60px; /* Increased spacing after the main heading */
-        }
-        .container > h2 {
-            margin-top: 100px; /* Increased space before each subheading */
-            margin-bottom: 40px;
-        }
-        .dropdown-section {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 20px;
-        }
-        .dropdown {
-            width: 30%;
-        }
-        .dropdown-button {
-            background-color: #f77f00;
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            text-align: left;
-            width: 100%;
-        }
-        .dropdown-content {
-            display: none;
-            margin-top: 10px;
-            text-align: left;
-            opacity: 0;
-            transform: translateY(-10px);
-            transition: opacity 0.3s ease, transform 0.3s ease;
-        }
-        .dropdown-content.active {
-            display: block;
-            opacity: 1;
-            transform: translateY(0);
+            line-height: 1.8;
+            margin-bottom: 30px; /* Added spacing between paragraphs */
         }
     </style>
 </head>
@@ -98,43 +62,13 @@
     <section class="farm-section">
         <div class="container">
             <h1>Our Farm-to-Table Philosophy</h1>
-
-            <div class="dropdown-section">
-                <div class="dropdown">
-                    <button class="dropdown-button" onclick="toggleDropdown('sourcing')">Our Sourcing</button>
-                    <div class="dropdown-content" id="sourcing">
-                        <p>
-                            At Ahara, we believe that exceptional cuisine begins with exceptional ingredients. 
-                            We meticulously source the freshest, locally grown produce and the finest legumes, grains, and dairy from trusted suppliers who share our commitment to quality and sustainability.
-                            Our partnerships with organic farms ensure that every ingredient that enters our kitchen is free from artificial additives and pesticides, allowing us to serve food that is as pure as it is flavorful.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="dropdown">
-                    <button class="dropdown-button" onclick="toggleDropdown('spices')">Our Spices</button>
-                    <div class="dropdown-content" id="spices">
-                        <p>
-                            Spices are the soul of Indian cuisine, and at Ahara, we treat them with the reverence they deserve.
-                            We source whole spices directly from their regions of origin, ensuring they retain their potency and depth of flavor. 
-                            Each spice is carefully roasted and ground in-house to unlock its full aromatic potential, creating the perfect balance of heat, earthiness, and warmth in every dish.
-                            Whether it's the smoky depth of cumin, the floral notes of cardamom, or the fiery touch of Kashmiri chili, our spice blends are crafted to transport you to the heart of India with every bite.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="dropdown">
-                    <button class="dropdown-button" onclick="toggleDropdown('techniques')">Our Techniques</button>
-                    <div class="dropdown-content" id="techniques">
-                        <p>
-                            Authenticity is at the heart of our cooking philosophy.
-                            We honor traditional Indian culinary methods passed down through generations while incorporating modern refinements to enhance flavor and presentation.
-                            Our chefs expertly employ slow-cooking, hand-ground spice blends, and time-honored fermentation techniques to bring out the natural richness of every dish.
-                            From the art of tempering (tadka) to the delicate process of making fresh paneer in-house, we take pride in every step of our craft to deliver an unparalleled dining experience.
-                        </p>
-                    </div>
-                </div>
-            </div>
+            
+            <h2>Farm-to-Table</h2>
+            <p>
+                At Ahara, we believe that exceptional cuisine begins with exceptional ingredients. 
+                We meticulously source the freshest, locally grown produce and the finest legumes, grains, and dairy from trusted suppliers who share our commitment to quality and sustainability.
+                Our partnerships with organic farms ensure that every ingredient that enters our kitchen is free from artificial additives and pesticides, allowing us to serve food that is as pure as it is flavorful.
+            </p>
 
             <h2>Sustainability at Heart</h2>
             <p>
@@ -153,16 +87,5 @@
             </p>
         </div>
     </section>
-
-    <script>
-        function toggleDropdown(id) {
-            const content = document.getElementById(id);
-            if (content.classList.contains('active')) {
-                content.classList.remove('active');
-            } else {
-                content.classList.add('active');
-            }
-        }
-    </script>
 </body>
 </html>
