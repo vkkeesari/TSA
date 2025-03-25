@@ -40,7 +40,7 @@ header p {
     background-color: #34495e; /* Dark grayish-blue */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    color: #ecf0f1; /* Light text for readability */
+    color: #f77f00; /* Light text for readability */
 }
 
 .menu-section h2 {
