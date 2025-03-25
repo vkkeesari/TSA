@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Farm-to-Table and Sustainability - Ahara</title>
+    <link rel="stylesheet" href="home-page.css">
     <style>
         body {
             margin: 0;
@@ -30,37 +31,6 @@
             color: #f77f00;
             margin-bottom: 20px;
         }
-        nav {
-            background-color: #333;
-            padding: 10px 20px;
-        }
-        nav .logo {
-            color: #f77f00;
-            font-weight: bold;
-            font-size: 24px;
-            display: inline-block;
-        }
-        nav .nav-links {
-            list-style: none;
-            display: inline-block;
-            margin: 0;
-            padding: 0;
-        }
-        nav .nav-links li {
-            display: inline;
-            margin: 0 15px;
-        }
-        nav .nav-links a {
-            color: #fff;
-            text-decoration: none;
-        }
-        .btn {
-            background-color: #f77f00;
-            color: #fff;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-        }
         .dropdown-section {
             display: flex;
             justify-content: space-between;
@@ -83,6 +53,14 @@
             display: none;
             margin-top: 10px;
             text-align: left;
+            opacity: 0;
+            transform: translateY(-10px);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+        .dropdown-content.active {
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
         }
         .dropdown-content p {
             color: #fff;
@@ -172,7 +150,11 @@
     <script>
         function toggleDropdown(id) {
             const content = document.getElementById(id);
-            content.style.display = content.style.display === "block" ? "none" : "block";
+            if (content.classList.contains('active')) {
+                content.classList.remove('active');
+            } else {
+                content.classList.add('active');
+            }
         }
     </script>
 </body>
