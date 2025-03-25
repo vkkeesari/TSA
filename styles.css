@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Georgia', serif;
-    text-align: center; /* Added to align text globally */
 }
 
 body {
@@ -11,6 +10,7 @@ body {
     padding-top: 80px;
     background: url('pexels-chanwalrus-958547.jpg') no-repeat center center/cover;
     color: #fff;
+    text-align: center;
 }
 
 .container {
@@ -58,7 +58,7 @@ p {
 
 nav {
     display: flex;
-    justify-content: center; /* Centers nav items horizontally */
+    justify-content: center;
     align-items: center;
     padding: 15px 10%;
     position: fixed;
@@ -74,14 +74,14 @@ nav {
     font-size: 24px;
     font-weight: bold;
     color: white;
-    margin: 0 20px; /* Adds spacing around logo */
+    margin: 0 20px;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-    justify-content: center; /* Centers links within the list */
-    margin: 0 20px; /* Adds spacing around links */
+    justify-content: center;
+    margin: 0 20px;
 }
 
 .nav-links li {
@@ -107,12 +107,17 @@ nav {
     text-decoration: none;
     border-radius: 5px;
     transition: background 0.3s, transform 0.3s;
-    margin: 0 20px; /* Adds spacing around button */
+    margin: 0 20px;
 }
 
 .btn:hover {
     background: #e76f51;
     animation: pulse 0.5s infinite;
+}
+
+/* New Staff Intro Section */
+.staff-intro {
+    padding: 40px 0; /* Adds spacing above and below "Meet the Staff" */
 }
 
 /* New Description Sections */
