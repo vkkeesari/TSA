@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Georgia', serif;
-    text-align: center; /* Added to align text globally */
 }
 
 body {
@@ -11,6 +10,7 @@ body {
     padding-top: 80px;
     background: url('pexels-chanwalrus-958547.jpg') no-repeat center center/cover;
     color: #fff;
+    text-align: center;
 }
 
 .container {
@@ -44,7 +44,7 @@ h2 {
     font-size: 24px;
     margin-top: 30px;
     margin-bottom: 15px;
-    border-bottom: 2px solid #f4a261;
+    border-bottom: 2px solid #f4a261; /* Orange bar for all h2 */
     padding-bottom: 5px;
 }
 
@@ -58,7 +58,7 @@ p {
 
 nav {
     display: flex;
-    justify-content: center; /* Centers nav items horizontally */
+    justify-content: center;
     align-items: center;
     padding: 15px 10%;
     position: fixed;
@@ -74,14 +74,14 @@ nav {
     font-size: 24px;
     font-weight: bold;
     color: white;
-    margin: 0 20px; /* Adds spacing around logo */
+    margin: 0 20px;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-    justify-content: center; /* Centers links within the list */
-    margin: 0 20px; /* Adds spacing around links */
+    justify-content: center;
+    margin: 0 20px;
 }
 
 .nav-links li {
@@ -107,7 +107,7 @@ nav {
     text-decoration: none;
     border-radius: 5px;
     transition: background 0.3s, transform 0.3s;
-    margin: 0 20px; /* Adds spacing around button */
+    margin: 0 20px;
 }
 
 .btn:hover {
@@ -115,7 +115,28 @@ nav {
     animation: pulse 0.5s infinite;
 }
 
-/* New Description Sections */
+/* About Section with Bottom Spacing */
+.about-section {
+    padding-bottom: 80px;
+}
+
+/* Staff Intro Section with No Background */
+.staff-intro .container {
+    background-color: transparent; /* No background */
+    box-shadow: none; /* No shadow */
+    padding: 0; /* Minimal padding */
+}
+
+.staff-intro {
+    padding: 80px 0; /* Maintains spacing */
+}
+
+.staff-intro h2 {
+    font-size: 36px; /* Bigger text */
+    margin-bottom: 0; /* Keeps spacing tight below */
+}
+
+/* Description Sections */
 .description {
     padding: 60px 0;
     opacity: 0;
@@ -248,5 +269,9 @@ nav {
 
     .btn {
         display: none;
+    }
+
+    .staff-intro h2 {
+        font-size: 28px; /* Adjusted for smaller screens */
     }
 }

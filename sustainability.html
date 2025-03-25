@@ -13,41 +13,6 @@
             color: #f77f00; /* Making all text orange */
             text-align: center; /* Aligning all text to center */
         }
-        nav {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background-color: #333;
-            z-index: 1000;
-            padding: 10px 0;
-        }
-        .logo {
-            color: #f77f00;
-            font-weight: bold;
-            font-size: 24px;
-            display: inline-block;
-        }
-        .nav-links {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: inline-block;
-        }
-        .nav-links li {
-            display: inline;
-            margin: 0 15px;
-        }
-        .nav-links a {
-            color: #fff;
-            text-decoration: none;
-        }
-        .btn {
-            background-color: #f77f00;
-            color: #fff;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-        }
         .farm-section {
             background: url('farmtotable.jpeg') no-repeat center center;
             background-size: cover;
@@ -56,10 +21,10 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            padding-top: 150px; /* Moves all content further down */
+            padding-top: 100px; /* Moves the content lower to avoid overlap */
         }
         .container {
-            max-width: 1200px;
+            max-width: 900px; /* Made the text box narrower */
             background-color: rgba(0, 0, 0, 0.7);
             padding: 20px;
             border-radius: 10px;
@@ -74,12 +39,21 @@
             font-size: 2rem;
             margin-top: 50px; /* Increased spacing for better layout */
         }
+        h3 {
+            font-size: 2rem; /* Matching the font size of "Farm-to-Table" */
+            margin-top: 30px; /* Adding space between different subsections */
+        }
         p {
             line-height: 1.8;
             margin-bottom: 30px; /* Added spacing between paragraphs */
         }
         .farm-content {
             margin-top: 30px; /* Adding space between different Farm-to-Table subsections */
+        }
+        hr {
+            border: 1px solid #f77f00; /* Separation line styled to match theme */
+            margin: 40px auto; /* Spacing above and below each line */
+            width: 80%; /* Slightly shorter width for better alignment */
         }
     </style>
 </head>
@@ -102,7 +76,7 @@
         <div class="container">
             <h1>Our Farm-to-Table Philosophy</h1>
             
-            <h2>Farm-to-Table</h2>
+            <hr> <!-- Separation line -->
             <div class="farm-content">
                 <h3>Our Sourcing</h3>
                 <p>
@@ -111,6 +85,7 @@
                     Our partnerships with organic farms ensure that every ingredient that enters our kitchen is free from artificial additives and pesticides, allowing us to serve food that is as pure as it is flavorful.
                 </p>
             </div>
+            <hr> <!-- Separation line -->
             <div class="farm-content">
                 <h3>Our Techniques</h3>
                 <p>
@@ -119,6 +94,7 @@
                     From the art of tempering (tadka) to the delicate process of making fresh paneer in-house, we take pride in every step of our craft to deliver an unparalleled dining experience.
                 </p>
             </div>
+            <hr> <!-- Separation line -->
             <div class="farm-content">
                 <h3>Our Spices</h3>
                 <p>
@@ -128,22 +104,26 @@
                     Whether it's the smoky depth of cumin, the floral notes of cardamom, or the fiery touch of Kashmiri chili, our spice blends are crafted to transport you to the heart of India with every bite.
                 </p>
             </div>
-
-            <h2>Sustainability at Heart</h2>
-            <p>
-                At Ahara, sustainability is at the core of our mission.
-                We source our produce from pastures that utilize sustainable farming techniques, ensuring that every ingredient we use is both fresh and environmentally responsible.
-                Our farmers practice drip irrigation to conserve water, cover cropping to enrich the soil and prevent erosion, and crop rotation to maintain biodiversity and soil health.
-                By embracing these methods, we not only support the land that nourishes us but also ensure that our ingredients retain their natural flavor and nutritional value.
-                This commitment to sustainability allows us to serve food that is not only authentic and wholesome but also aligned with our vision of preserving the environment for future generations.
-            </p>
-
-            <h2>Preparation with Passion</h2>
-            <p>
-                At Ahara, we believe that freshness is key to delivering authentic and flavorful Indian cuisine.
-                That’s why we prepare every dish fresh to order, ensuring that each bite is packed with vibrant taste and nutrition.
-                Our produce is sourced weekly from local farms in North Carolina, where sustainable practices ensure the highest quality ingredients.
-            </p>
+            <hr> <!-- Separation line -->
+            <div>
+                <h2>Sustainability at Heart</h2>
+                <p>
+                    At Ahara, sustainability is at the core of our mission.
+                    We source our produce from pastures that utilize sustainable farming techniques, ensuring that every ingredient we use is both fresh and environmentally responsible.
+                    Our farmers practice drip irrigation to conserve water, cover cropping to enrich the soil and prevent erosion, and crop rotation to maintain biodiversity and soil health.
+                    By embracing these methods, we not only support the land that nourishes us but also ensure that our ingredients retain their natural flavor and nutritional value.
+                    This commitment to sustainability allows us to serve food that is not only authentic and wholesome but also aligned with our vision of preserving the environment for future generations.
+                </p>
+            </div>
+            <hr> <!-- Separation line -->
+            <div>
+                <h2>Preparation with Passion</h2>
+                <p>
+                    At Ahara, we believe that freshness is key to delivering authentic and flavorful Indian cuisine.
+                    That’s why we prepare every dish fresh to order, ensuring that each bite is packed with vibrant taste and nutrition.
+                    Our produce is sourced weekly from local farms in North Carolina, where sustainable practices ensure the highest quality ingredients.
+                </p>
+            </div>
         </div>
     </section>
 </body>
