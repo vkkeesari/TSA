@@ -10,13 +10,13 @@
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
+            color: #f77f00; /* Making all text orange */
         }
         .farm-section {
             background: url('farmtotable.jpeg') no-repeat center center;
             background-size: cover;
             padding: 40px 20px;
             min-height: 100vh;
-            color: #fff;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -28,8 +28,21 @@
             border-radius: 10px;
         }
         h1, h2 {
-            color: #f77f00;
             margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 2.5rem;
+        }
+        h2 {
+            font-size: 1.8rem;
+        }
+        p {
+            line-height: 1.6;
+        }
+        /* Adding extra spacing between sections */
+        .container > h1,
+        .container > h2 {
+            margin-bottom: 40px;
         }
         .dropdown-section {
             display: flex;
@@ -61,9 +74,6 @@
             display: block;
             opacity: 1;
             transform: translateY(0);
-        }
-        .dropdown-content p {
-            color: #fff;
         }
     </style>
 </head>
@@ -137,12 +147,6 @@
                 At Ahara, we believe that freshness is key to delivering authentic and flavorful Indian cuisine.
                 That’s why we prepare every dish fresh to order, ensuring that each bite is packed with vibrant taste and nutrition.
                 Our produce is sourced weekly from local farms in North Carolina, where sustainable practices ensure the highest quality ingredients.
-            </p>
-
-            <h2>Farm-to-Table</h2>
-            <p>
-                At Ahara, our farm-to-table philosophy celebrates the journey from the earth to your plate.
-                We work closely with local farmers to source fresh, organic ingredients, ensuring that every meal supports the land and community.
             </p>
         </div>
     </section>
