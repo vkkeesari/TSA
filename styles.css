@@ -115,12 +115,17 @@ nav {
     animation: pulse 0.5s infinite;
 }
 
-/* New Staff Intro Section */
-.staff-intro {
-    padding: 40px 0; /* Adds spacing above and below "Meet the Staff" */
+/* About Section with Bottom Spacing */
+.about-section {
+    padding-bottom: 80px; /* Adds space after "Our Mission" */
 }
 
-/* New Description Sections */
+/* Staff Intro Section with Increased Spacing */
+.staff-intro {
+    padding: 80px 0; /* Increased padding for clear separation */
+}
+
+/* Description Sections */
 .description {
     padding: 60px 0;
     opacity: 0;
