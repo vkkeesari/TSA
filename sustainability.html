@@ -55,15 +55,6 @@
             margin: 40px auto; /* Spacing above and below each line */
             width: 80%; /* Slightly shorter width for better alignment */
         }
-        .description {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.6s ease, transform 0.6s ease;
-        }
-        .description.animate {
-            opacity: 1;
-            transform: translateY(0);
-        }
     </style>
 </head>
 <body>
@@ -82,11 +73,11 @@
     </header>
 
     <section class="farm-section">
-        <div class="container description">
+        <div class="container">
             <h1>Our Farm-to-Table Philosophy</h1>
             
             <hr> <!-- Separation line -->
-            <div class="farm-content description">
+            <div class="farm-content">
                 <h3>Our Sourcing</h3>
                 <p>
                     At Ahara, we believe that exceptional cuisine begins with exceptional ingredients. 
@@ -95,7 +86,7 @@
                 </p>
             </div>
             <hr> <!-- Separation line -->
-            <div class="farm-content description">
+            <div class="farm-content">
                 <h3>Our Techniques</h3>
                 <p>
                     Authenticity is at the heart of our cooking philosophy. We honor traditional Indian culinary methods passed down through generations while incorporating modern refinements to enhance flavor and presentation.
@@ -104,7 +95,7 @@
                 </p>
             </div>
             <hr> <!-- Separation line -->
-            <div class="farm-content description">
+            <div class="farm-content">
                 <h3>Our Spices</h3>
                 <p>
                     Spices are the soul of Indian cuisine, and at Ahara, we treat them with the reverence they deserve.
@@ -114,7 +105,7 @@
                 </p>
             </div>
             <hr> <!-- Separation line -->
-            <div class="description">
+            <div>
                 <h2>Sustainability at Heart</h2>
                 <p>
                     At Ahara, sustainability is at the core of our mission.
@@ -125,7 +116,7 @@
                 </p>
             </div>
             <hr> <!-- Separation line -->
-            <div class="description">
+            <div>
                 <h2>Preparation with Passion</h2>
                 <p>
                     At Ahara, we believe that freshness is key to delivering authentic and flavorful Indian cuisine.
@@ -135,20 +126,5 @@
             </div>
         </div>
     </section>
-    <script>
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('animate');
-                } else {
-                    entry.target.classList.remove('animate');
-                }
-            });
-        }, { threshold: 0.5 });
-
-        document.querySelectorAll('.description').forEach(desc => {
-            observer.observe(desc);
-        });
-    </script>
 </body>
 </html>
