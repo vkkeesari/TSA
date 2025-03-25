@@ -20,6 +20,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     animation: fadeIn 1s ease-in-out;
+    text-align: center; /* Center-aligns all text inside container */
 }
 
 header {
@@ -112,8 +113,8 @@ nav {
 
 /* New Description Sections */
 .description {
-    padding: 60px 0; /* Space between sections */
-    opacity: 0; /* Hidden by default */
+    padding: 60px 0;
+    opacity: 0;
 }
 
 /* Reset transform states when not animated */
