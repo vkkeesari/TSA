@@ -5,7 +5,6 @@ import { getDatabase, ref, set, get, onValue } from "https://www.gstatic.com/fir
 window.saveReservation = saveReservation;
 window.clearReservations = clearReservations;
 
-// Firebase Configuration
 const firebaseConfig = {
     apiKey: "AIzaSyDu2f71DLUEX73Vi5ccIe47FxYw2K2l-Vg",
     authDomain: "ahara-reservations.firebaseapp.com",
@@ -16,13 +15,11 @@ const firebaseConfig = {
     appId: "1:860869953925:web:9cceb6a4a8dc050c091cec"
   };
 
-// Initialize Firebase and Database
 const app = initializeApp(firebaseConfig);
 const db = getDatabase(app);
 
 let reservations = {};
 
-// Load reservations from Firebase
 function loadReservations() {
     const reservationsRef = ref(db, "reservations/");
     onValue(reservationsRef, (snapshot) => {
@@ -37,7 +34,6 @@ function loadReservations() {
     });
 }
 
-// Save reservations to Firebase
 function saveToFirebase() {
     const reservationsRef = ref(db, "reservations/");
     set(reservationsRef, reservations)
@@ -45,7 +41,6 @@ function saveToFirebase() {
         .catch((error) => console.error("Error saving reservations:", error));
 }
 
-// Save reservation
 function saveReservation(event) {
     event.preventDefault();
 
