@@ -28,6 +28,13 @@
             background-color: rgba(0, 0, 0, 0.7);
             padding: 20px;
             border-radius: 10px;
+            opacity: 0; /* Initially hidden */
+            transform: translateY(20px); /* Slide down effect */
+            transition: opacity 0.8s ease, transform 0.8s ease; /* Smooth transition */
+        }
+        .container.visible {
+            opacity: 1; /* Fully visible */
+            transform: translateY(0); /* Reset position */
         }
         h1, h2 {
             margin-bottom: 20px;
@@ -126,5 +133,22 @@
             </div>
         </div>
     </section>
+
+    <script>
+        // JavaScript to trigger the fade-in and slide-up animation on scroll
+        document.addEventListener('DOMContentLoaded', () => {
+            const container = document.querySelector('.container');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        container.classList.add('visible');
+                    }
+                });
+            });
+
+            observer.observe(container);
+        });
+    </script>
 </body>
 </html>
