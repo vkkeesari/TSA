@@ -7,31 +7,31 @@ body {
     text-align: center;
 }
 
-.container {
-    max-width: 900px;
-    margin: 50px auto;
-    padding: 20px;
+h1 {
+    color: #f4a261;
+    margin: 20px 0;
 }
 
-h1, h2, h3 {
-    color: #f4a261;
-    margin-bottom: 15px;
+h2 {
+    color: #eea159;
+    margin-top: 30px;
+}
+
+.reference-section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 15px;
 }
 
 p {
-    line-height: 1.5;
-    margin-bottom: 15px;
+    margin: 10px 0;
 }
 
-hr {
-    border: 1px solid #eea159;
-    margin: 20px auto;
-    width: 80%;
+a {
+    color: #f4a261;
+    text-decoration: none;
 }
 
-footer {
-    margin-top: 50px;
-    padding: 10px 0;
-    background: #222;
-    color: white;
+a:hover {
+    text-decoration: underline;
 }
