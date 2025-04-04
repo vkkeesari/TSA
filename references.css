@@ -7,7 +7,6 @@ body {
 }
 
 .reference-section {
-    background: url('reference-bg.jpeg') no-repeat center center;
     background-size: cover;
     padding: 40px 20px;
     min-height: 100vh;
