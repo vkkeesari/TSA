@@ -131,15 +131,14 @@ function updateTimeAvailability() {
 }
 
 
-// Clear reservations
 function clearReservations() {
     if (confirm("Are you sure you want to clear all reservations?")) {
         const reservationsRef = ref(db, "reservations/");
-        set(reservationsRef, {}) // Clear the data in Firebase
+        set(reservationsRef, {}) 
             .then(() => {
-                reservations = {}; // Clear local reservations object
-                displayReservations(); // Update display
-                updateTimeAvailability(); // Refresh availability
+                reservations = {};
+                displayReservations(); 
+                updateTimeAvailability();
                 alert("All reservations have been cleared.");
             })
             .catch((error) => {
@@ -148,11 +147,10 @@ function clearReservations() {
     }
 }
 
-// Event listener for DOMContentLoaded
 document.addEventListener("DOMContentLoaded", () => {
-    loadReservations();         // Load reservations from Firebase
-    populateTimeDropdown();     // Populate the time dropdown
-    displayReservations();      // Show current reservations on load
+    loadReservations(); 
+    populateTimeDropdown(); 
+    displayReservations(); 
 
     document.getElementById("date").addEventListener("change", updateTimeAvailability);
 });
